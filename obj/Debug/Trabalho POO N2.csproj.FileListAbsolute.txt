@@ -1,0 +1,10 @@
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho POO N2.csprojAssemblyReference.cache
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho_POO_N2.Form1.resources
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho_POO_N2.Properties.Resources.resources
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho POO N2.csproj.GenerateResource.cache
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho POO N2.csproj.CoreCompileInputs.cache
+C:\Users\carol\Desktop\Trabalho POO N2\bin\Debug\Trabalho POO N2.exe.config
+C:\Users\carol\Desktop\Trabalho POO N2\bin\Debug\Trabalho POO N2.exe
+C:\Users\carol\Desktop\Trabalho POO N2\bin\Debug\Trabalho POO N2.pdb
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho POO N2.exe
+C:\Users\carol\Desktop\Trabalho POO N2\obj\Debug\Trabalho POO N2.pdb

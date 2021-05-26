@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trabalho POO N2", "Trabalho POO N2.csproj", "{5815AF75-6798-4D95-B843-D66E1626343F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizacaoDeTestes", "..\AutomatizacaoDeTestes\AutomatizacaoDeTestes.csproj", "{C393F7DA-C6E2-4415-B980-43E45119B503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5815AF75-6798-4D95-B843-D66E1626343F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5815AF75-6798-4D95-B843-D66E1626343F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5815AF75-6798-4D95-B843-D66E1626343F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5815AF75-6798-4D95-B843-D66E1626343F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C393F7DA-C6E2-4415-B980-43E45119B503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C393F7DA-C6E2-4415-B980-43E45119B503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C393F7DA-C6E2-4415-B980-43E45119B503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C393F7DA-C6E2-4415-B980-43E45119B503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E13EE0A-291E-4840-9E30-18F30D3AC184}
+	EndGlobalSection
+EndGlobal
