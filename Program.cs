@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Trabalho_POO_N2
+namespace Trabalho_POO_N2.Formulários
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Trabalho_POO_N2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmInicial());
         }
     }
 }

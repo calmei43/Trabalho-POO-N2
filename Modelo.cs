@@ -8,9 +8,9 @@ namespace Trabalho_POO_N2
 {
     public class Modelo
     {
-        int Codigo { get; set; }
-        string Descrição { get; set; }
-        Marca Marca { get; set; }
+        public int Codigo { get; set; }
+        public string Descricao { get; set; }
+        public Marca Marca { get; set; }
 
     }
 }

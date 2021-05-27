@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Trabalho_POO_N2.CapacidadeMaximaExcedidaException" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CapacidadeMaximaExcedidaException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Aviao" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\Aviao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.AviaoBase" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAgAAAA=</HashCode>
+      <FileName>Classes Veículos\AviaoBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.AviaoDeGuerra" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\AviaoDeGuerra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Caminhao" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAgAAIgABAAAAEAAAkAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\Caminhao.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trabalho_POO_N2.Carro" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAIAAAAAAAAAAAgAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Classes Veículos\Carro.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trabalho_POO_N2.Moto" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\Moto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trabalho_POO_N2.NavioBase" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\NavioBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.NavioGuerra" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\NavioGuerra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Onibus" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAIAAAAQAAAAAAgAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\Onibus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trabalho_POO_N2.Trem" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes Veículos\Trem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Veiculo" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAgAAAAAAgAAAAAgAAAAAIAE=</HashCode>
+      <FileName>Classes Veículos\Veiculo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.FrmCadastro" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>//ozBA5gAm3QHLuAamCSS7ADgknKLgAIcCVJlIMwVbg=</HashCode>
+      <FileName>Formulários\FrmCadastroVeiculos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.FrmInicialcs" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAIABAAAICAABACAAYAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Formulários\FrmInicialcs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Marca" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Marca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Modelo" Collapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Modelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Pedagio" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAQAAAAACABAgAEAAAAAAIAAAAA=</HashCode>
+      <FileName>Pedagio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Program" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Formulários.FrmCadastroModeloMarca" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgCAEAAQCAAEBACAQCAEAACAAAAAAEBAAAgAAAAAAA=</HashCode>
+      <FileName>Formulários\FrmCadastroModeloMarca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Formulários.FrmListar" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAABAAAgCAAAACAAQAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Formulários\FrmListar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Properties.Resources" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAAAAAAABEAAAAQAAAAAAAAAAAAAIAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trabalho_POO_N2.Properties.Settings" Collapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Trabalho_POO_N2.IPedagio" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPedagio.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trabalho POO N2", "Trabalho POO N2.csproj", "{5815AF75-6798-4D95-B843-D66E1626343F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatizacaoDeTestes", "..\AutomatizacaoDeTestes\AutomatizacaoDeTestes.csproj", "{C393F7DA-C6E2-4415-B980-43E45119B503}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestesUnitarios", "TestesUnitarios\TestesUnitarios.csproj", "{E0A5F598-1792-446F-B0CA-1F86BB5A39D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{5815AF75-6798-4D95-B843-D66E1626343F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5815AF75-6798-4D95-B843-D66E1626343F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5815AF75-6798-4D95-B843-D66E1626343F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C393F7DA-C6E2-4415-B980-43E45119B503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C393F7DA-C6E2-4415-B980-43E45119B503}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C393F7DA-C6E2-4415-B980-43E45119B503}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C393F7DA-C6E2-4415-B980-43E45119B503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A5F598-1792-446F-B0CA-1F86BB5A39D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A5F598-1792-446F-B0CA-1F86BB5A39D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A5F598-1792-446F-B0CA-1F86BB5A39D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A5F598-1792-446F-B0CA-1F86BB5A39D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

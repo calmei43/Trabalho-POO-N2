@@ -46,32 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aviao.cs" />
-    <Compile Include="AviaoBase.cs" />
-    <Compile Include="AviaoDeGuerra.cs" />
-    <Compile Include="Caminhao.cs" />
+    <Compile Include="Classes Veículos\Aviao.cs" />
+    <Compile Include="Classes Veículos\AviaoBase.cs" />
+    <Compile Include="Classes Veículos\AviaoDeGuerra.cs" />
+    <Compile Include="Classes Veículos\Caminhao.cs" />
     <Compile Include="CapacidadeMaximaExcedidaException.cs" />
-    <Compile Include="Carro.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes Veículos\Carro.cs" />
+    <Compile Include="Formulários\FrmCadastroVeiculos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formulários\FrmCadastroVeiculos.Designer.cs">
+      <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\FrmInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\FrmInicial.Designer.cs">
+      <DependentUpon>FrmInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\FrmCadastroModeloMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\FrmCadastroModeloMarca.Designer.cs">
+      <DependentUpon>FrmCadastroModeloMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\FrmListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\FrmListar.Designer.cs">
+      <DependentUpon>FrmListar.cs</DependentUpon>
     </Compile>
     <Compile Include="IPedagio.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Modelo.cs" />
-    <Compile Include="Moto.cs" />
-    <Compile Include="NavioBase.cs" />
-    <Compile Include="NavioGuerra.cs" />
-    <Compile Include="Onibus.cs" />
+    <Compile Include="Classes Veículos\Moto.cs" />
+    <Compile Include="Classes Veículos\NavioBase.cs" />
+    <Compile Include="Classes Veículos\NavioGuerra.cs" />
+    <Compile Include="Classes Veículos\Onibus.cs" />
     <Compile Include="Pedagio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trem.cs" />
-    <Compile Include="Veiculo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Classes Veículos\Trem.cs" />
+    <Compile Include="Classes Veículos\Veiculo.cs" />
+    <EmbeddedResource Include="Formulários\FrmCadastroModeloMarca.resx">
+      <DependentUpon>FrmCadastroModeloMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\FrmCadastroVeiculos.resx">
+      <DependentUpon>FrmCadastroVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\FrmInicial.resx">
+      <DependentUpon>FrmInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\FrmListar.resx">
+      <DependentUpon>FrmListar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,7 +108,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DiagramaDeClasses.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +123,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veiculos.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
