@@ -96,7 +96,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.btnLimpaVidros_Onibus = new System.Windows.Forms.Button();
             this.btnPagarPedagio_Onibus = new System.Windows.Forms.Button();
-            this.QtdeEixos_Onibus = new System.Windows.Forms.TextBox();
+            this.txtQtdeEixos_Onibus = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.txtMarca_Onibus = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -442,6 +442,7 @@
             this.btnCadastrar_Caminhao.TabIndex = 35;
             this.btnCadastrar_Caminhao.Text = "Cadastrar!";
             this.btnCadastrar_Caminhao.UseVisualStyleBackColor = true;
+            this.btnCadastrar_Caminhao.Click += new System.EventHandler(this.btnCadastrar_Caminhao_Click);
             // 
             // btnLimparVidros_Caminhao
             // 
@@ -451,6 +452,7 @@
             this.btnLimparVidros_Caminhao.TabIndex = 34;
             this.btnLimparVidros_Caminhao.Text = "Limpar Vidros";
             this.btnLimparVidros_Caminhao.UseVisualStyleBackColor = true;
+            this.btnLimparVidros_Caminhao.Click += new System.EventHandler(this.btnLimparVidros_Caminhao_Click);
             // 
             // btnPagarPedagio_Caminhao
             // 
@@ -460,6 +462,7 @@
             this.btnPagarPedagio_Caminhao.TabIndex = 33;
             this.btnPagarPedagio_Caminhao.Text = "Pagar Pedagio";
             this.btnPagarPedagio_Caminhao.UseVisualStyleBackColor = true;
+            this.btnPagarPedagio_Caminhao.Click += new System.EventHandler(this.btnPagarPedagio_Caminhao_Click);
             // 
             // btnDescarregar_Caminhao
             // 
@@ -469,6 +472,7 @@
             this.btnDescarregar_Caminhao.TabIndex = 31;
             this.btnDescarregar_Caminhao.Text = "Descarregar";
             this.btnDescarregar_Caminhao.UseVisualStyleBackColor = true;
+            this.btnDescarregar_Caminhao.Click += new System.EventHandler(this.btnDescarregar_Caminhao_Click);
             // 
             // btnCarregar_Caminhao
             // 
@@ -478,6 +482,7 @@
             this.btnCarregar_Caminhao.TabIndex = 30;
             this.btnCarregar_Caminhao.Text = "Carregar";
             this.btnCarregar_Caminhao.UseVisualStyleBackColor = true;
+            this.btnCarregar_Caminhao.Click += new System.EventHandler(this.btnCarregar_Caminhao_Click);
             // 
             // txtCapacidadeMax_Caminhao
             // 
@@ -572,6 +577,7 @@
             this.btnDesacelerar_Caminhao.TabIndex = 17;
             this.btnDesacelerar_Caminhao.Text = "Desacelerar";
             this.btnDesacelerar_Caminhao.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_Caminhao.Click += new System.EventHandler(this.btnDesacelerar_Caminhao_Click);
             // 
             // btnAcelerar_Caminhao
             // 
@@ -581,6 +587,7 @@
             this.btnAcelerar_Caminhao.TabIndex = 16;
             this.btnAcelerar_Caminhao.Text = "Acelerar";
             this.btnAcelerar_Caminhao.UseVisualStyleBackColor = true;
+            this.btnAcelerar_Caminhao.Click += new System.EventHandler(this.btnAcelerar_Caminhao_Click);
             // 
             // txtVelocidade_Caminhao
             // 
@@ -666,6 +673,7 @@
             this.btnCadastrar_Moto.TabIndex = 38;
             this.btnCadastrar_Moto.Text = "Cadastrar!";
             this.btnCadastrar_Moto.UseVisualStyleBackColor = true;
+            this.btnCadastrar_Moto.Click += new System.EventHandler(this.btnCadastrar_Moto_Click);
             // 
             // btnEmpinar_Moto
             // 
@@ -675,6 +683,7 @@
             this.btnEmpinar_Moto.TabIndex = 37;
             this.btnEmpinar_Moto.Text = "Empinar";
             this.btnEmpinar_Moto.UseVisualStyleBackColor = true;
+            this.btnEmpinar_Moto.Click += new System.EventHandler(this.btnEmpinar_Moto_Click);
             // 
             // btnPagarPedagio_Moto
             // 
@@ -684,6 +693,7 @@
             this.btnPagarPedagio_Moto.TabIndex = 36;
             this.btnPagarPedagio_Moto.Text = "Pagar Pedagio";
             this.btnPagarPedagio_Moto.UseVisualStyleBackColor = true;
+            this.btnPagarPedagio_Moto.Click += new System.EventHandler(this.btnPagarPedagio_Moto_Click);
             // 
             // txtCapacidadePassageiros_Moto
             // 
@@ -727,6 +737,7 @@
             this.btnDesacelerar_Moto.TabIndex = 17;
             this.btnDesacelerar_Moto.Text = "Desacelerar";
             this.btnDesacelerar_Moto.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_Moto.Click += new System.EventHandler(this.btnDesacelerar_Moto_Click);
             // 
             // btnAcelerar_Moto
             // 
@@ -736,6 +747,7 @@
             this.btnAcelerar_Moto.TabIndex = 16;
             this.btnAcelerar_Moto.Text = "Acelerar";
             this.btnAcelerar_Moto.UseVisualStyleBackColor = true;
+            this.btnAcelerar_Moto.Click += new System.EventHandler(this.btnAcelerar_Moto_Click);
             // 
             // txtVelocidade_Moto
             // 
@@ -798,7 +810,7 @@
             this.tpOnibus.Controls.Add(this.label25);
             this.tpOnibus.Controls.Add(this.btnLimpaVidros_Onibus);
             this.tpOnibus.Controls.Add(this.btnPagarPedagio_Onibus);
-            this.tpOnibus.Controls.Add(this.QtdeEixos_Onibus);
+            this.tpOnibus.Controls.Add(this.txtQtdeEixos_Onibus);
             this.tpOnibus.Controls.Add(this.label24);
             this.tpOnibus.Controls.Add(this.txtMarca_Onibus);
             this.tpOnibus.Controls.Add(this.label20);
@@ -846,6 +858,7 @@
             this.btnCadastrar_Onibus.TabIndex = 41;
             this.btnCadastrar_Onibus.Text = "Cadastrar!";
             this.btnCadastrar_Onibus.UseVisualStyleBackColor = true;
+            this.btnCadastrar_Onibus.Click += new System.EventHandler(this.btnCadastrar_Onibus_Click);
             // 
             // txtCapacidadePassageiros_Onibus
             // 
@@ -872,6 +885,7 @@
             this.btnLimpaVidros_Onibus.TabIndex = 38;
             this.btnLimpaVidros_Onibus.Text = "Limpar Vidros";
             this.btnLimpaVidros_Onibus.UseVisualStyleBackColor = true;
+            this.btnLimpaVidros_Onibus.Click += new System.EventHandler(this.btnLimpaVidros_Onibus_Click);
             // 
             // btnPagarPedagio_Onibus
             // 
@@ -881,13 +895,14 @@
             this.btnPagarPedagio_Onibus.TabIndex = 37;
             this.btnPagarPedagio_Onibus.Text = "Pagar Pedagio";
             this.btnPagarPedagio_Onibus.UseVisualStyleBackColor = true;
+            this.btnPagarPedagio_Onibus.Click += new System.EventHandler(this.btnPagarPedagio_Onibus_Click);
             // 
-            // QtdeEixos_Onibus
+            // txtQtdeEixos_Onibus
             // 
-            this.QtdeEixos_Onibus.Location = new System.Drawing.Point(387, 122);
-            this.QtdeEixos_Onibus.Name = "QtdeEixos_Onibus";
-            this.QtdeEixos_Onibus.Size = new System.Drawing.Size(57, 20);
-            this.QtdeEixos_Onibus.TabIndex = 36;
+            this.txtQtdeEixos_Onibus.Location = new System.Drawing.Point(387, 122);
+            this.txtQtdeEixos_Onibus.Name = "txtQtdeEixos_Onibus";
+            this.txtQtdeEixos_Onibus.Size = new System.Drawing.Size(57, 20);
+            this.txtQtdeEixos_Onibus.TabIndex = 36;
             // 
             // label24
             // 
@@ -924,6 +939,7 @@
             this.btnDesacelerar_Onibus.TabIndex = 27;
             this.btnDesacelerar_Onibus.Text = "Desacelerar";
             this.btnDesacelerar_Onibus.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_Onibus.Click += new System.EventHandler(this.btnDesacelerar_Onibus_Click);
             // 
             // btnAcelerar_Onibus
             // 
@@ -933,6 +949,7 @@
             this.btnAcelerar_Onibus.TabIndex = 26;
             this.btnAcelerar_Onibus.Text = "Acelerar";
             this.btnAcelerar_Onibus.UseVisualStyleBackColor = true;
+            this.btnAcelerar_Onibus.Click += new System.EventHandler(this.btnAcelerar_Onibus_Click);
             // 
             // txtVelocidade_Onibus
             // 
@@ -1020,6 +1037,7 @@
             this.btnDecolar_Aviao.TabIndex = 47;
             this.btnDecolar_Aviao.Text = "Decolar";
             this.btnDecolar_Aviao.UseVisualStyleBackColor = true;
+            this.btnDecolar_Aviao.Click += new System.EventHandler(this.btnDecolar_Aviao_Click);
             // 
             // btnArremeter_Aviao
             // 
@@ -1029,6 +1047,7 @@
             this.btnArremeter_Aviao.TabIndex = 46;
             this.btnArremeter_Aviao.Text = "Arremeter";
             this.btnArremeter_Aviao.UseVisualStyleBackColor = true;
+            this.btnArremeter_Aviao.Click += new System.EventHandler(this.btnArremeter_Aviao_Click);
             // 
             // btnCadastrar_Aviao
             // 
@@ -1038,6 +1057,7 @@
             this.btnCadastrar_Aviao.TabIndex = 45;
             this.btnCadastrar_Aviao.Text = "Cadastrar!";
             this.btnCadastrar_Aviao.UseVisualStyleBackColor = true;
+            this.btnCadastrar_Aviao.Click += new System.EventHandler(this.btnCadastrar_Aviao_Click);
             // 
             // btnLimpaVidros_Aviao
             // 
@@ -1047,6 +1067,7 @@
             this.btnLimpaVidros_Aviao.TabIndex = 44;
             this.btnLimpaVidros_Aviao.Text = "Limpar Vidros";
             this.btnLimpaVidros_Aviao.UseVisualStyleBackColor = true;
+            this.btnLimpaVidros_Aviao.Click += new System.EventHandler(this.btnLimpaVidros_Aviao_Click);
             // 
             // btnPousar_Aviao
             // 
@@ -1056,6 +1077,7 @@
             this.btnPousar_Aviao.TabIndex = 43;
             this.btnPousar_Aviao.Text = "Pousar";
             this.btnPousar_Aviao.UseVisualStyleBackColor = true;
+            this.btnPousar_Aviao.Click += new System.EventHandler(this.btnPousar_Aviao_Click);
             // 
             // txtCapacidadePassageiros_Aviao
             // 
@@ -1099,6 +1121,7 @@
             this.btnDesacelerar_Aviao.TabIndex = 37;
             this.btnDesacelerar_Aviao.Text = "Desacelerar";
             this.btnDesacelerar_Aviao.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_Aviao.Click += new System.EventHandler(this.btnDesacelerar_Aviao_Click);
             // 
             // btnAcelerar_Aviao
             // 
@@ -1108,6 +1131,7 @@
             this.btnAcelerar_Aviao.TabIndex = 36;
             this.btnAcelerar_Aviao.Text = "Acelerar";
             this.btnAcelerar_Aviao.UseVisualStyleBackColor = true;
+            this.btnAcelerar_Aviao.Click += new System.EventHandler(this.btnAcelerar_Aviao_Click);
             // 
             // txtVelocidade_Aviao
             // 
@@ -1196,6 +1220,7 @@
             this.btnEjetar_AviaoGuerra.TabIndex = 65;
             this.btnEjetar_AviaoGuerra.Text = "Ejetar!!!";
             this.btnEjetar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnEjetar_AviaoGuerra.Click += new System.EventHandler(this.btnEjetar_AviaoGuerra_Click);
             // 
             // btnDecolar_AviaoGuerra
             // 
@@ -1205,6 +1230,7 @@
             this.btnDecolar_AviaoGuerra.TabIndex = 64;
             this.btnDecolar_AviaoGuerra.Text = "Decolar";
             this.btnDecolar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnDecolar_AviaoGuerra.Click += new System.EventHandler(this.btnDecolar_AviaoGuerra_Click);
             // 
             // btnArremeter_AviaoGuerra
             // 
@@ -1214,6 +1240,7 @@
             this.btnArremeter_AviaoGuerra.TabIndex = 63;
             this.btnArremeter_AviaoGuerra.Text = "Arremeter";
             this.btnArremeter_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnArremeter_AviaoGuerra.Click += new System.EventHandler(this.btnArremeter_AviaoGuerra_Click);
             // 
             // btnCadastrar_AviaoGuerra
             // 
@@ -1223,6 +1250,7 @@
             this.btnCadastrar_AviaoGuerra.TabIndex = 62;
             this.btnCadastrar_AviaoGuerra.Text = "Cadastrar!";
             this.btnCadastrar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnCadastrar_AviaoGuerra.Click += new System.EventHandler(this.btnCadastrar_AviaoGuerra_Click);
             // 
             // btnAtacar_AviaoGuerra
             // 
@@ -1232,6 +1260,7 @@
             this.btnAtacar_AviaoGuerra.TabIndex = 61;
             this.btnAtacar_AviaoGuerra.Text = "Atacar!!!";
             this.btnAtacar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnAtacar_AviaoGuerra.Click += new System.EventHandler(this.btnAtacar_AviaoGuerra_Click);
             // 
             // btnPousar_AviaoGuerra
             // 
@@ -1241,6 +1270,7 @@
             this.btnPousar_AviaoGuerra.TabIndex = 60;
             this.btnPousar_AviaoGuerra.Text = "Pousar";
             this.btnPousar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnPousar_AviaoGuerra.Click += new System.EventHandler(this.btnPousar_AviaoGuerra_Click);
             // 
             // txtCapacidadePassageiros_AviaoGuerra
             // 
@@ -1284,6 +1314,7 @@
             this.btnDesacelerar_AviaoGuerra.TabIndex = 55;
             this.btnDesacelerar_AviaoGuerra.Text = "Desacelerar";
             this.btnDesacelerar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_AviaoGuerra.Click += new System.EventHandler(this.btnDesacelerar_AviaoGuerra_Click);
             // 
             // btnAcelerar_AviaoGuerra
             // 
@@ -1293,6 +1324,7 @@
             this.btnAcelerar_AviaoGuerra.TabIndex = 54;
             this.btnAcelerar_AviaoGuerra.Text = "Acelerar";
             this.btnAcelerar_AviaoGuerra.UseVisualStyleBackColor = true;
+            this.btnAcelerar_AviaoGuerra.Click += new System.EventHandler(this.btnAcelerar_AviaoGuerra_Click);
             // 
             // txtVelocidade_AviaoGuerra
             // 
@@ -1396,6 +1428,7 @@
             this.btnCadastrar_Trem.TabIndex = 80;
             this.btnCadastrar_Trem.Text = "Cadastrar!";
             this.btnCadastrar_Trem.UseVisualStyleBackColor = true;
+            this.btnCadastrar_Trem.Click += new System.EventHandler(this.btnCadastrar_Trem_Click);
             // 
             // btnLimparVidros_Trem
             // 
@@ -1405,6 +1438,7 @@
             this.btnLimparVidros_Trem.TabIndex = 79;
             this.btnLimparVidros_Trem.Text = "Limpar Vidros";
             this.btnLimparVidros_Trem.UseVisualStyleBackColor = true;
+            this.btnLimparVidros_Trem.Click += new System.EventHandler(this.btnLimparVidros_Trem_Click);
             // 
             // txtCapacidadePassageiros_Trem
             // 
@@ -1448,6 +1482,7 @@
             this.btnDesacelerar_Trem.TabIndex = 73;
             this.btnDesacelerar_Trem.Text = "Desacelerar";
             this.btnDesacelerar_Trem.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_Trem.Click += new System.EventHandler(this.btnDesacelerar_Trem_Click);
             // 
             // btnAcelerar_Trem
             // 
@@ -1457,6 +1492,7 @@
             this.btnAcelerar_Trem.TabIndex = 72;
             this.btnAcelerar_Trem.Text = "Acelerar";
             this.btnAcelerar_Trem.UseVisualStyleBackColor = true;
+            this.btnAcelerar_Trem.Click += new System.EventHandler(this.btnAcelerar_Trem_Click);
             // 
             // txtVelocidade_Trem
             // 
@@ -1541,6 +1577,7 @@
             this.btnCadastrar_Navio.TabIndex = 96;
             this.btnCadastrar_Navio.Text = "Cadastrar!";
             this.btnCadastrar_Navio.UseVisualStyleBackColor = true;
+            this.btnCadastrar_Navio.Click += new System.EventHandler(this.btnCadastrar_Navio_Click);
             // 
             // btnAtracar_Navio
             // 
@@ -1550,6 +1587,7 @@
             this.btnAtracar_Navio.TabIndex = 95;
             this.btnAtracar_Navio.Text = "Atracar";
             this.btnAtracar_Navio.UseVisualStyleBackColor = true;
+            this.btnAtracar_Navio.Click += new System.EventHandler(this.btnAtracar_Navio_Click);
             // 
             // txtCapacidadePassageiros_Navio
             // 
@@ -1593,6 +1631,7 @@
             this.btnDesacelerar_Navio.TabIndex = 90;
             this.btnDesacelerar_Navio.Text = "Desacelerar";
             this.btnDesacelerar_Navio.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_Navio.Click += new System.EventHandler(this.btnDesacelerar_Navio_Click);
             // 
             // btnAcelerar_Navio
             // 
@@ -1602,6 +1641,7 @@
             this.btnAcelerar_Navio.TabIndex = 89;
             this.btnAcelerar_Navio.Text = "Acelerar";
             this.btnAcelerar_Navio.UseVisualStyleBackColor = true;
+            this.btnAcelerar_Navio.Click += new System.EventHandler(this.btnAcelerar_Navio_Click);
             // 
             // txtVelocidade_Navio
             // 
@@ -1687,6 +1727,7 @@
             this.btnAtacar_NavioGuerra.TabIndex = 111;
             this.btnAtacar_NavioGuerra.Text = "Atacar!!!";
             this.btnAtacar_NavioGuerra.UseVisualStyleBackColor = true;
+            this.btnAtacar_NavioGuerra.Click += new System.EventHandler(this.btnAtacar_NavioGuerra_Click);
             // 
             // btnCadastrar_NavioGuerra
             // 
@@ -1696,6 +1737,7 @@
             this.btnCadastrar_NavioGuerra.TabIndex = 110;
             this.btnCadastrar_NavioGuerra.Text = "Cadastrar!";
             this.btnCadastrar_NavioGuerra.UseVisualStyleBackColor = true;
+            this.btnCadastrar_NavioGuerra.Click += new System.EventHandler(this.btnCadastrar_NavioGuerra_Click);
             // 
             // btnAtracar_NavioGuerra
             // 
@@ -1705,6 +1747,7 @@
             this.btnAtracar_NavioGuerra.TabIndex = 109;
             this.btnAtracar_NavioGuerra.Text = "Atracar";
             this.btnAtracar_NavioGuerra.UseVisualStyleBackColor = true;
+            this.btnAtracar_NavioGuerra.Click += new System.EventHandler(this.btnAtracar_NavioGuerra_Click);
             // 
             // txtCapacidadePassageiros_NavioGuerra
             // 
@@ -1748,6 +1791,7 @@
             this.btnDesacelerar_NavioGuerra.TabIndex = 104;
             this.btnDesacelerar_NavioGuerra.Text = "Desacelerar";
             this.btnDesacelerar_NavioGuerra.UseVisualStyleBackColor = true;
+            this.btnDesacelerar_NavioGuerra.Click += new System.EventHandler(this.btnDesacelerar_NavioGuerra_Click);
             // 
             // btnAcelerar_NavioGuerra
             // 
@@ -1757,6 +1801,7 @@
             this.btnAcelerar_NavioGuerra.TabIndex = 103;
             this.btnAcelerar_NavioGuerra.Text = "Acelerar";
             this.btnAcelerar_NavioGuerra.UseVisualStyleBackColor = true;
+            this.btnAcelerar_NavioGuerra.Click += new System.EventHandler(this.btnAcelerar_NavioGuerra_Click);
             // 
             // txtVelocidade_NavioGuerra
             // 
@@ -1911,7 +1956,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button btnLimpaVidros_Onibus;
         private System.Windows.Forms.Button btnPagarPedagio_Onibus;
-        private System.Windows.Forms.TextBox QtdeEixos_Onibus;
+        private System.Windows.Forms.TextBox txtQtdeEixos_Onibus;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txtMarca_Onibus;
         private System.Windows.Forms.Label label20;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_POO_N2
 {
-    class Trem
+    class Trem : Veiculo
     {
         #region Atributos
         public int QuantidadeVagões { get; set; }
