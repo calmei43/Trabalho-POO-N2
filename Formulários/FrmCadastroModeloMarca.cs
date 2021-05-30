@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
+using static Trabalho_POO_N2.MenuSuperior;
+using Newtonsoft.Json;
+using Formatting = Newtonsoft.Json.Formatting;
 
 namespace Trabalho_POO_N2.Formulários
 {
-    public partial class FrmCadastroModeloMarca : Form
+    public partial class FrmCadastroModeloMarca : Form, IMenuSuperior
     {
         #region Singleton
         private static FrmCadastroModeloMarca instance;
@@ -28,14 +26,14 @@ namespace Trabalho_POO_N2.Formulários
         #endregion
 
         #region Listas 
-        List<Modelo> listaModelo = new List<Modelo>();
-        List<Marca> listaMarca = new List<Marca>();
-
+        public List<Modelo> listaModelo = new List<Modelo>();
+        public List<Marca> listaMarca = new List<Marca>();
         #endregion
         public FrmCadastroModeloMarca()
         {
             InitializeComponent();
             instance = this;
+            SetCurrentForm(this);
         }
 
         #region Marca
@@ -49,13 +47,22 @@ namespace Trabalho_POO_N2.Formulários
                 marca.Descricao = txtDescricao_Marca.Text;
 
                 listaMarca.Add(marca);
+                cbMarca_Modelo.Items.Add(marca); //adicionar as marcas na combobox do modelo
 
+                cbMarca_Modelo.DisplayMember = "Descricao";
+                MessageBox.Show("Marca cadastrada com sucesso!");
             }
             catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
             }
         }
+
+        void SalvarMarca()
+        {
+            File.WriteAllText("marcas.json", JsonConvert.SerializeObject(listaMarca, Formatting.Indented));
+        }
+
 
         #endregion
 
@@ -64,13 +71,12 @@ namespace Trabalho_POO_N2.Formulários
         {
             try
             {
-                Modelo modelo = new Modelo();
-                cbMarca_Modelo.Items.Add(listaModelo);
+                Modelo modelo = new Modelo(Convert.ToInt16(txtCodigo_Modelo.Text), txtDescricao_Modelo.Text, (Marca)cbMarca_Modelo.SelectedItem);
 
-                modelo.Codigo = Convert.ToInt16(txtCodigo_Modelo.Text);
-                modelo.Descricao = txtDescricao_Modelo.Text;
-                modelo.Marca = (Marca)cbMarca_Modelo.SelectedItem;
                 listaModelo.Add(modelo);
+                SalvarMarca();
+                SalvarModelo();
+                MessageBox.Show("Modelo cadastrado com sucesso!");
             }
             catch (Exception erro)
             {
@@ -79,6 +85,17 @@ namespace Trabalho_POO_N2.Formulários
 
         }
 
+        void SalvarModelo()
+        {
+            File.WriteAllText("modelos.json", JsonConvert.SerializeObject(listaModelo, Formatting.Indented));
+        }
+
+        public void SetCurrentForm(Form currentForm)
+        {
+            FormController.CurrentForm = currentForm;
+        }
+
         #endregion
+
     }
 }

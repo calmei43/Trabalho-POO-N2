@@ -19,5 +19,11 @@ namespace Trabalho_POO_N2
         }
         #endregion
 
+        public override string ToString()
+        {
+            return base.ToString() + Environment.NewLine +
+            "Pedágio Pago: " + ValorPedagio;
+        }
+
     }
 }

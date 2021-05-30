@@ -53,5 +53,12 @@ namespace Trabalho_POO_N2.Formulários
 
             FrmListar.Show();
         }
+
+        private void btnCadastraPedagio_Click(object sender, EventArgs e)
+        {
+            FrmPedagio FrmPedagio = new FrmPedagio();
+
+            FrmPedagio.Show();
+        }
     }
 }

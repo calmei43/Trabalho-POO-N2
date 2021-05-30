@@ -30,15 +30,12 @@ namespace Trabalho_POO_N2
         #endregion
 
         #region Metodos
-        protected void Receber()
+        public void Receber()
         {
-
+            
         }
 
-        double TotalPedagioRecebido()
-        {
-            return ValorTotalAcumulado;
-        }
+       
         #endregion
     }
 

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trabalho_POO_N2.Interfaces;
 
 namespace Trabalho_POO_N2
 {
-    public class Caminhao : Veiculo, IPedagio
+    public class Caminhao : Veiculo, IPedagio, ILimpador
     {
         #region Atributos
 
@@ -27,6 +28,9 @@ namespace Trabalho_POO_N2
         public void Carregar(double peso)
         {
             PesoCarregado += peso;
+
+            Console.WriteLine($"{Identificacao} carregando...");
+
         }
 
         /// <summary>
@@ -35,6 +39,7 @@ namespace Trabalho_POO_N2
         public void Descarregar()
         {
             PesoCarregado = 0;
+            Console.WriteLine($"{Identificacao} descarregando...");
         }
 
         /// <summary>
@@ -46,11 +51,10 @@ namespace Trabalho_POO_N2
             if (PesoCarregado > CapacidadeMaxima)
             {
                 throw new CapacidadeMaximaExcedidaException(CapacidadeMaxima - PesoCarregado);
-
             }
 
         }
-        public void Limpador() => Console.WriteLine("Limpando...");
+        public void Limpador() => Console.WriteLine($"Limpador Ativado/Desativado do {Identificacao}...");
 
         public void PagaPedagio()
         {
@@ -58,5 +62,13 @@ namespace Trabalho_POO_N2
             pedagio.ValorTotalAcumulado += (ValorPedagio * QuantidadeEixos);
         }
         #endregion
+
+        public override string ToString()
+        {
+            return base.ToString()  + Environment.NewLine +
+            "Capacidade Máxima: " + CapacidadeMaxima + Environment.NewLine + "Peso Carregado: " + PesoCarregado +
+            Environment.NewLine + "Quantidade de Eixos: " + QuantidadeEixos +
+            Environment.NewLine + "Pedágio Pago: " + ValorPedagio;
+        }
     }
 }

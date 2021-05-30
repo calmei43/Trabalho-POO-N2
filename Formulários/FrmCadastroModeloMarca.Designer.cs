@@ -31,12 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroModeloMarca));
             this.tcMarcaModelo = new System.Windows.Forms.TabControl();
             this.tpMarca = new System.Windows.Forms.TabPage();
+            this.txtCodigo_Marca = new System.Windows.Forms.TextBox();
             this.pbVeiculos = new System.Windows.Forms.PictureBox();
             this.txtDescricao_Marca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrar_Marca = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.tpModelo = new System.Windows.Forms.TabPage();
+            this.txtCodigo_Modelo = new System.Windows.Forms.TextBox();
             this.pbCarros = new System.Windows.Forms.PictureBox();
             this.cbMarca_Modelo = new System.Windows.Forms.ComboBox();
             this.txtDescricao_Modelo = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.btnCadastrarModelo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtCodigo_Marca = new System.Windows.Forms.TextBox();
-            this.txtCodigo_Modelo = new System.Windows.Forms.TextBox();
             this.tcMarcaModelo.SuspendLayout();
             this.tpMarca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbVeiculos)).BeginInit();
@@ -78,6 +78,13 @@
             this.tpMarca.Size = new System.Drawing.Size(474, 305);
             this.tpMarca.TabIndex = 6;
             this.tpMarca.Text = "Marca";
+            // 
+            // txtCodigo_Marca
+            // 
+            this.txtCodigo_Marca.Location = new System.Drawing.Point(115, 85);
+            this.txtCodigo_Marca.Name = "txtCodigo_Marca";
+            this.txtCodigo_Marca.Size = new System.Drawing.Size(103, 20);
+            this.txtCodigo_Marca.TabIndex = 85;
             // 
             // pbVeiculos
             // 
@@ -143,6 +150,13 @@
             this.tpModelo.TabIndex = 8;
             this.tpModelo.Text = "Modelo";
             // 
+            // txtCodigo_Modelo
+            // 
+            this.txtCodigo_Modelo.Location = new System.Drawing.Point(94, 62);
+            this.txtCodigo_Modelo.Name = "txtCodigo_Modelo";
+            this.txtCodigo_Modelo.Size = new System.Drawing.Size(113, 20);
+            this.txtCodigo_Modelo.TabIndex = 93;
+            // 
             // pbCarros
             // 
             this.pbCarros.Image = global::Trabalho_POO_N2.Properties.Resources.carros;
@@ -154,6 +168,7 @@
             // 
             // cbMarca_Modelo
             // 
+            this.cbMarca_Modelo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMarca_Modelo.FormattingEnabled = true;
             this.cbMarca_Modelo.Location = new System.Drawing.Point(86, 157);
             this.cbMarca_Modelo.Name = "cbMarca_Modelo";
@@ -206,20 +221,6 @@
             this.label4.Size = new System.Drawing.Size(56, 19);
             this.label4.TabIndex = 84;
             this.label4.Text = "Código:";
-            // 
-            // txtCodigo_Marca
-            // 
-            this.txtCodigo_Marca.Location = new System.Drawing.Point(115, 85);
-            this.txtCodigo_Marca.Name = "txtCodigo_Marca";
-            this.txtCodigo_Marca.Size = new System.Drawing.Size(103, 20);
-            this.txtCodigo_Marca.TabIndex = 85;
-            // 
-            // txtCodigo_Modelo
-            // 
-            this.txtCodigo_Modelo.Location = new System.Drawing.Point(94, 62);
-            this.txtCodigo_Modelo.Name = "txtCodigo_Modelo";
-            this.txtCodigo_Modelo.Size = new System.Drawing.Size(113, 20);
-            this.txtCodigo_Modelo.TabIndex = 93;
             // 
             // FrmCadastroModeloMarca
             // 

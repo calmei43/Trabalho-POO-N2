@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Trabalho_POO_N2
+namespace Trabalho_POO_N2.Interfaces
 {
-    class NavioBase : Veiculo
+   public interface IEjetar
     {
-       public void Atracar() => Console.WriteLine("Atracando...");
+        void Ejetar();
     }
 }

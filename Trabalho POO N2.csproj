@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes Veículos\Aviao.cs" />
-    <Compile Include="Classes Veículos\AviaoBase.cs" />
+    <Compile Include="Interfaces\IAviao.cs" />
     <Compile Include="Classes Veículos\AviaoDeGuerra.cs" />
     <Compile Include="Classes Veículos\Caminhao.cs" />
     <Compile Include="CapacidadeMaximaExcedidaException.cs" />
@@ -76,11 +80,23 @@
     <Compile Include="Formulários\FrmListar.Designer.cs">
       <DependentUpon>FrmListar.cs</DependentUpon>
     </Compile>
-    <Compile Include="IPedagio.cs" />
+    <Compile Include="Formulários\FrmPedagio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\FrmPedagio.Designer.cs">
+      <DependentUpon>FrmPedagio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IAtacar.cs" />
+    <Compile Include="Interfaces\IAtracar.cs" />
+    <Compile Include="Interfaces\IEjetar.cs" />
+    <Compile Include="Interfaces\ILimpador.cs" />
+    <Compile Include="Interfaces\IPedagio.cs" />
+    <Compile Include="IPagaPedagio.cs" />
     <Compile Include="Marca.cs" />
+    <Compile Include="MenuSuperior.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="Classes Veículos\Moto.cs" />
-    <Compile Include="Classes Veículos\NavioBase.cs" />
+    <Compile Include="Classes Veículos\Navio.cs" />
     <Compile Include="Classes Veículos\NavioGuerra.cs" />
     <Compile Include="Classes Veículos\Onibus.cs" />
     <Compile Include="Pedagio.cs" />
@@ -100,6 +116,9 @@
     <EmbeddedResource Include="Formulários\FrmListar.resx">
       <DependentUpon>FrmListar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\FrmPedagio.resx">
+      <DependentUpon>FrmPedagio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,6 +130,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DiagramaDeClasses.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\veiculos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier2_118071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier2_117800.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

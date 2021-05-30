@@ -1,0 +1,16 @@
+[
+  {
+    "velocidade": 0,
+    "QuantidadeVagões": 4,
+    "Identificacao": "trem2",
+    "CapacidadePassageiros": 20,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  }
+]

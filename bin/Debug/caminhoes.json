@@ -1,0 +1,18 @@
+[
+  {
+    "velocidade": 0,
+    "PesoCarregado": 34.0,
+    "QuantidadeEixos": 4,
+    "CapacidadeMaxima": 90.0,
+    "Identificacao": "caminhao2",
+    "CapacidadePassageiros": 3,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  }
+]

@@ -11,6 +11,12 @@ namespace Trabalho_POO_N2
         public int Codigo { get; set; }
         public string Descricao { get; set; }
         public Marca Marca { get; set; }
-
+        public Modelo(int codigo, string descricao, Marca marca)
+        {
+            Codigo = codigo;
+            Descricao = descricao;
+            Marca = marca;
+        }
+       
     }
 }

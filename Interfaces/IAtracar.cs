@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Trabalho_POO_N2
+namespace Trabalho_POO_N2.Interfaces
 {
-    public interface IPedagio
+    public interface IAtracar
     {
-        void PagaPedagio();
+        void Atracar();
     }
-}  
+}

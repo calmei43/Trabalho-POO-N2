@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroVeiculos));
             this.tcVeiculo = new System.Windows.Forms.TabControl();
             this.tpCarro = new System.Windows.Forms.TabPage();
+            this.cbMarca_Carro = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Carro = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Carro = new System.Windows.Forms.Button();
             this.btnLimparVidros_Carro = new System.Windows.Forms.Button();
             this.btnPagarPedagio_Carro = new System.Windows.Forms.Button();
@@ -38,17 +40,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtQtdePortas_Carro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtMarca_Carro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Desacelerar_Carro = new System.Windows.Forms.Button();
             this.btnAcelerar_Carro = new System.Windows.Forms.Button();
             this.txtVelocidade_Carro = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtModelo_Carro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome_Carro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tpCaminhao = new System.Windows.Forms.TabPage();
+            this.cbMarca_Caminhao = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Caminhao = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Caminhao = new System.Windows.Forms.Button();
             this.btnLimparVidros_Caminhao = new System.Windows.Forms.Button();
             this.btnPagarPedagio_Caminhao = new System.Windows.Forms.Button();
@@ -62,33 +64,33 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtPesoCarregado_Caminhao = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtMarca_Caminhao = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnDesacelerar_Caminhao = new System.Windows.Forms.Button();
             this.btnAcelerar_Caminhao = new System.Windows.Forms.Button();
             this.txtVelocidade_Caminhao = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtModelo_Caminhao = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNome_Caminhao = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tpMoto = new System.Windows.Forms.TabPage();
+            this.cbMarca_Moto = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Moto = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Moto = new System.Windows.Forms.Button();
             this.btnEmpinar_Moto = new System.Windows.Forms.Button();
             this.btnPagarPedagio_Moto = new System.Windows.Forms.Button();
             this.txtCapacidadePassageiros_Moto = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtMarca_Moto = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnDesacelerar_Moto = new System.Windows.Forms.Button();
             this.btnAcelerar_Moto = new System.Windows.Forms.Button();
             this.txtVelocidade_Moto = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtModelo_Moto = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtNome_Moto = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.tpOnibus = new System.Windows.Forms.TabPage();
+            this.cbMarca_Onibus = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Onibus = new System.Windows.Forms.ComboBox();
             this.ckbPossuiLeitoSim_Onibus = new System.Windows.Forms.CheckBox();
             this.label26 = new System.Windows.Forms.Label();
             this.btnCadastrar_Onibus = new System.Windows.Forms.Button();
@@ -98,17 +100,17 @@
             this.btnPagarPedagio_Onibus = new System.Windows.Forms.Button();
             this.txtQtdeEixos_Onibus = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.txtMarca_Onibus = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.btnDesacelerar_Onibus = new System.Windows.Forms.Button();
             this.btnAcelerar_Onibus = new System.Windows.Forms.Button();
             this.txtVelocidade_Onibus = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.txtModelo_Onibus = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtNome_Onibus = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.tpAviao = new System.Windows.Forms.TabPage();
+            this.cbMarca_Aviao = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Aviao = new System.Windows.Forms.ComboBox();
             this.btnDecolar_Aviao = new System.Windows.Forms.Button();
             this.btnArremeter_Aviao = new System.Windows.Forms.Button();
             this.btnCadastrar_Aviao = new System.Windows.Forms.Button();
@@ -116,17 +118,17 @@
             this.btnPousar_Aviao = new System.Windows.Forms.Button();
             this.txtCapacidadePassageiros_Aviao = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.txtMarca_Aviao = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.btnDesacelerar_Aviao = new System.Windows.Forms.Button();
             this.btnAcelerar_Aviao = new System.Windows.Forms.Button();
             this.txtVelocidade_Aviao = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.txtModelo_Aviao = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.txtNome_Aviao = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.tpAviaoDeGuerra = new System.Windows.Forms.TabPage();
+            this.cbMarca_AviaoGuerra = new System.Windows.Forms.ComboBox();
+            this.cbModelo_AviaoGuerra = new System.Windows.Forms.ComboBox();
             this.btnEjetar_AviaoGuerra = new System.Windows.Forms.Button();
             this.btnDecolar_AviaoGuerra = new System.Windows.Forms.Button();
             this.btnArremeter_AviaoGuerra = new System.Windows.Forms.Button();
@@ -135,64 +137,65 @@
             this.btnPousar_AviaoGuerra = new System.Windows.Forms.Button();
             this.txtCapacidadePassageiros_AviaoGuerra = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.txtMarca_AviaoGuerra = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.btnDesacelerar_AviaoGuerra = new System.Windows.Forms.Button();
             this.btnAcelerar_AviaoGuerra = new System.Windows.Forms.Button();
             this.txtVelocidade_AviaoGuerra = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtModelo_AviaoGuerra = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.txtNome_AviaoGuerra = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.tpTrem = new System.Windows.Forms.TabPage();
+            this.cbMarca_Trem = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Trem = new System.Windows.Forms.ComboBox();
             this.txtQtdeVagoes_Trem = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.btnCadastrar_Trem = new System.Windows.Forms.Button();
             this.btnLimparVidros_Trem = new System.Windows.Forms.Button();
             this.txtCapacidadePassageiros_Trem = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.txtMarca_Trem = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.btnDesacelerar_Trem = new System.Windows.Forms.Button();
             this.btnAcelerar_Trem = new System.Windows.Forms.Button();
             this.txtVelocidade_Trem = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.txtModelo_Trem = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.txtNome_Trem = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.tpNavio = new System.Windows.Forms.TabPage();
+            this.cbMarca_Navio = new System.Windows.Forms.ComboBox();
+            this.cbModelo_Navio = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Navio = new System.Windows.Forms.Button();
             this.btnAtracar_Navio = new System.Windows.Forms.Button();
             this.txtCapacidadePassageiros_Navio = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.txtMarca_Navio = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.btnDesacelerar_Navio = new System.Windows.Forms.Button();
             this.btnAcelerar_Navio = new System.Windows.Forms.Button();
             this.txtVelocidade_Navio = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.txtModelo_Navio = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.txtNome_Navio = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.tpNavioDeGuerra = new System.Windows.Forms.TabPage();
+            this.cbMarca_NavioGuerra = new System.Windows.Forms.ComboBox();
+            this.cbModelo_NavioGuerra = new System.Windows.Forms.ComboBox();
             this.btnAtacar_NavioGuerra = new System.Windows.Forms.Button();
             this.btnCadastrar_NavioGuerra = new System.Windows.Forms.Button();
             this.btnAtracar_NavioGuerra = new System.Windows.Forms.Button();
             this.txtCapacidadePassageiros_NavioGuerra = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.txtMarca_NavioGuerra = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.btnDesacelerar_NavioGuerra = new System.Windows.Forms.Button();
             this.btnAcelerar_NavioGuerra = new System.Windows.Forms.Button();
             this.txtVelocidade_NavioGuerra = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.txtModelo_NavioGuerra = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.txtNome_NavioGuerra = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
+            this.Registros = new System.Windows.Forms.TabPage();
+            this.label53 = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.tcVeiculo.SuspendLayout();
             this.tpCarro.SuspendLayout();
             this.tpCaminhao.SuspendLayout();
@@ -203,6 +206,7 @@
             this.tpTrem.SuspendLayout();
             this.tpNavio.SuspendLayout();
             this.tpNavioDeGuerra.SuspendLayout();
+            this.Registros.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcVeiculo
@@ -216,6 +220,7 @@
             this.tcVeiculo.Controls.Add(this.tpTrem);
             this.tcVeiculo.Controls.Add(this.tpNavio);
             this.tcVeiculo.Controls.Add(this.tpNavioDeGuerra);
+            this.tcVeiculo.Controls.Add(this.Registros);
             this.tcVeiculo.Location = new System.Drawing.Point(0, 2);
             this.tcVeiculo.Name = "tcVeiculo";
             this.tcVeiculo.SelectedIndex = 0;
@@ -225,6 +230,8 @@
             // tpCarro
             // 
             this.tpCarro.BackColor = System.Drawing.Color.LightBlue;
+            this.tpCarro.Controls.Add(this.cbMarca_Carro);
+            this.tpCarro.Controls.Add(this.cbModelo_Carro);
             this.tpCarro.Controls.Add(this.btnCadastrar_Carro);
             this.tpCarro.Controls.Add(this.btnLimparVidros_Carro);
             this.tpCarro.Controls.Add(this.btnPagarPedagio_Carro);
@@ -232,13 +239,11 @@
             this.tpCarro.Controls.Add(this.label5);
             this.tpCarro.Controls.Add(this.txtQtdePortas_Carro);
             this.tpCarro.Controls.Add(this.label6);
-            this.tpCarro.Controls.Add(this.txtMarca_Carro);
             this.tpCarro.Controls.Add(this.label4);
             this.tpCarro.Controls.Add(this.btn_Desacelerar_Carro);
             this.tpCarro.Controls.Add(this.btnAcelerar_Carro);
             this.tpCarro.Controls.Add(this.txtVelocidade_Carro);
             this.tpCarro.Controls.Add(this.label3);
-            this.tpCarro.Controls.Add(this.txtModelo_Carro);
             this.tpCarro.Controls.Add(this.label2);
             this.tpCarro.Controls.Add(this.txtNome_Carro);
             this.tpCarro.Controls.Add(this.label1);
@@ -247,7 +252,26 @@
             this.tpCarro.Padding = new System.Windows.Forms.Padding(3);
             this.tpCarro.Size = new System.Drawing.Size(474, 305);
             this.tpCarro.TabIndex = 0;
+            this.tpCarro.Tag = "Carro";
             this.tpCarro.Text = "Carro";
+            // 
+            // cbMarca_Carro
+            // 
+            this.cbMarca_Carro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Carro.FormattingEnabled = true;
+            this.cbMarca_Carro.Location = new System.Drawing.Point(68, 67);
+            this.cbMarca_Carro.Name = "cbMarca_Carro";
+            this.cbMarca_Carro.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Carro.TabIndex = 18;
+            // 
+            // cbModelo_Carro
+            // 
+            this.cbModelo_Carro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Carro.FormattingEnabled = true;
+            this.cbModelo_Carro.Location = new System.Drawing.Point(262, 28);
+            this.cbModelo_Carro.Name = "cbModelo_Carro";
+            this.cbModelo_Carro.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Carro.TabIndex = 17;
             // 
             // btnCadastrar_Carro
             // 
@@ -298,7 +322,7 @@
             // 
             // txtQtdePortas_Carro
             // 
-            this.txtQtdePortas_Carro.Location = new System.Drawing.Point(236, 140);
+            this.txtQtdePortas_Carro.Location = new System.Drawing.Point(238, 140);
             this.txtQtdePortas_Carro.Name = "txtQtdePortas_Carro";
             this.txtQtdePortas_Carro.Size = new System.Drawing.Size(53, 20);
             this.txtQtdePortas_Carro.TabIndex = 11;
@@ -312,13 +336,6 @@
             this.label6.Size = new System.Drawing.Size(146, 19);
             this.label6.TabIndex = 10;
             this.label6.Text = "Quantidade de Portas:";
-            // 
-            // txtMarca_Carro
-            // 
-            this.txtMarca_Carro.Location = new System.Drawing.Point(68, 68);
-            this.txtMarca_Carro.Name = "txtMarca_Carro";
-            this.txtMarca_Carro.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Carro.TabIndex = 9;
             // 
             // label4
             // 
@@ -367,13 +384,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Velocidade:";
             // 
-            // txtModelo_Carro
-            // 
-            this.txtModelo_Carro.Location = new System.Drawing.Point(262, 29);
-            this.txtModelo_Carro.Name = "txtModelo_Carro";
-            this.txtModelo_Carro.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Carro.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -404,6 +414,8 @@
             // tpCaminhao
             // 
             this.tpCaminhao.BackColor = System.Drawing.Color.LightGreen;
+            this.tpCaminhao.Controls.Add(this.cbMarca_Caminhao);
+            this.tpCaminhao.Controls.Add(this.cbModelo_Caminhao);
             this.tpCaminhao.Controls.Add(this.btnCadastrar_Caminhao);
             this.tpCaminhao.Controls.Add(this.btnLimparVidros_Caminhao);
             this.tpCaminhao.Controls.Add(this.btnPagarPedagio_Caminhao);
@@ -417,13 +429,11 @@
             this.tpCaminhao.Controls.Add(this.label12);
             this.tpCaminhao.Controls.Add(this.txtPesoCarregado_Caminhao);
             this.tpCaminhao.Controls.Add(this.label11);
-            this.tpCaminhao.Controls.Add(this.txtMarca_Caminhao);
             this.tpCaminhao.Controls.Add(this.label7);
             this.tpCaminhao.Controls.Add(this.btnDesacelerar_Caminhao);
             this.tpCaminhao.Controls.Add(this.btnAcelerar_Caminhao);
             this.tpCaminhao.Controls.Add(this.txtVelocidade_Caminhao);
             this.tpCaminhao.Controls.Add(this.label8);
-            this.tpCaminhao.Controls.Add(this.txtModelo_Caminhao);
             this.tpCaminhao.Controls.Add(this.label9);
             this.tpCaminhao.Controls.Add(this.txtNome_Caminhao);
             this.tpCaminhao.Controls.Add(this.label10);
@@ -432,7 +442,26 @@
             this.tpCaminhao.Padding = new System.Windows.Forms.Padding(3);
             this.tpCaminhao.Size = new System.Drawing.Size(474, 305);
             this.tpCaminhao.TabIndex = 1;
+            this.tpCaminhao.Tag = "Caminhao";
             this.tpCaminhao.Text = "Caminhão";
+            // 
+            // cbMarca_Caminhao
+            // 
+            this.cbMarca_Caminhao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Caminhao.FormattingEnabled = true;
+            this.cbMarca_Caminhao.Location = new System.Drawing.Point(69, 64);
+            this.cbMarca_Caminhao.Name = "cbMarca_Caminhao";
+            this.cbMarca_Caminhao.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Caminhao.TabIndex = 37;
+            // 
+            // cbModelo_Caminhao
+            // 
+            this.cbModelo_Caminhao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Caminhao.FormattingEnabled = true;
+            this.cbModelo_Caminhao.Location = new System.Drawing.Point(263, 27);
+            this.cbModelo_Caminhao.Name = "cbModelo_Caminhao";
+            this.cbModelo_Caminhao.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Caminhao.TabIndex = 36;
             // 
             // btnCadastrar_Caminhao
             // 
@@ -552,13 +581,6 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Peso Carregado:";
             // 
-            // txtMarca_Caminhao
-            // 
-            this.txtMarca_Caminhao.Location = new System.Drawing.Point(69, 64);
-            this.txtMarca_Caminhao.Name = "txtMarca_Caminhao";
-            this.txtMarca_Caminhao.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Caminhao.TabIndex = 19;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -606,13 +628,6 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Velocidade:";
             // 
-            // txtModelo_Caminhao
-            // 
-            this.txtModelo_Caminhao.Location = new System.Drawing.Point(263, 25);
-            this.txtModelo_Caminhao.Name = "txtModelo_Caminhao";
-            this.txtModelo_Caminhao.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Caminhao.TabIndex = 13;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -643,18 +658,18 @@
             // tpMoto
             // 
             this.tpMoto.BackColor = System.Drawing.Color.LightPink;
+            this.tpMoto.Controls.Add(this.cbMarca_Moto);
+            this.tpMoto.Controls.Add(this.cbModelo_Moto);
             this.tpMoto.Controls.Add(this.btnCadastrar_Moto);
             this.tpMoto.Controls.Add(this.btnEmpinar_Moto);
             this.tpMoto.Controls.Add(this.btnPagarPedagio_Moto);
             this.tpMoto.Controls.Add(this.txtCapacidadePassageiros_Moto);
             this.tpMoto.Controls.Add(this.label19);
-            this.tpMoto.Controls.Add(this.txtMarca_Moto);
             this.tpMoto.Controls.Add(this.label15);
             this.tpMoto.Controls.Add(this.btnDesacelerar_Moto);
             this.tpMoto.Controls.Add(this.btnAcelerar_Moto);
             this.tpMoto.Controls.Add(this.txtVelocidade_Moto);
             this.tpMoto.Controls.Add(this.label16);
-            this.tpMoto.Controls.Add(this.txtModelo_Moto);
             this.tpMoto.Controls.Add(this.label17);
             this.tpMoto.Controls.Add(this.txtNome_Moto);
             this.tpMoto.Controls.Add(this.label18);
@@ -663,7 +678,26 @@
             this.tpMoto.Padding = new System.Windows.Forms.Padding(3);
             this.tpMoto.Size = new System.Drawing.Size(474, 305);
             this.tpMoto.TabIndex = 2;
+            this.tpMoto.Tag = "Moto";
             this.tpMoto.Text = "Moto";
+            // 
+            // cbMarca_Moto
+            // 
+            this.cbMarca_Moto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Moto.FormattingEnabled = true;
+            this.cbMarca_Moto.Location = new System.Drawing.Point(68, 72);
+            this.cbMarca_Moto.Name = "cbMarca_Moto";
+            this.cbMarca_Moto.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Moto.TabIndex = 40;
+            // 
+            // cbModelo_Moto
+            // 
+            this.cbModelo_Moto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Moto.FormattingEnabled = true;
+            this.cbModelo_Moto.Location = new System.Drawing.Point(262, 36);
+            this.cbModelo_Moto.Name = "cbModelo_Moto";
+            this.cbModelo_Moto.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Moto.TabIndex = 39;
             // 
             // btnCadastrar_Moto
             // 
@@ -712,13 +746,6 @@
             this.label19.TabIndex = 20;
             this.label19.Text = "Capacidade de Passageiros:";
             // 
-            // txtMarca_Moto
-            // 
-            this.txtMarca_Moto.Location = new System.Drawing.Point(68, 73);
-            this.txtMarca_Moto.Name = "txtMarca_Moto";
-            this.txtMarca_Moto.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Moto.TabIndex = 19;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -766,13 +793,6 @@
             this.label16.TabIndex = 14;
             this.label16.Text = "Velocidade:";
             // 
-            // txtModelo_Moto
-            // 
-            this.txtModelo_Moto.Location = new System.Drawing.Point(262, 34);
-            this.txtModelo_Moto.Name = "txtModelo_Moto";
-            this.txtModelo_Moto.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Moto.TabIndex = 13;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -803,6 +823,8 @@
             // tpOnibus
             // 
             this.tpOnibus.BackColor = System.Drawing.Color.NavajoWhite;
+            this.tpOnibus.Controls.Add(this.cbMarca_Onibus);
+            this.tpOnibus.Controls.Add(this.cbModelo_Onibus);
             this.tpOnibus.Controls.Add(this.ckbPossuiLeitoSim_Onibus);
             this.tpOnibus.Controls.Add(this.label26);
             this.tpOnibus.Controls.Add(this.btnCadastrar_Onibus);
@@ -812,13 +834,11 @@
             this.tpOnibus.Controls.Add(this.btnPagarPedagio_Onibus);
             this.tpOnibus.Controls.Add(this.txtQtdeEixos_Onibus);
             this.tpOnibus.Controls.Add(this.label24);
-            this.tpOnibus.Controls.Add(this.txtMarca_Onibus);
             this.tpOnibus.Controls.Add(this.label20);
             this.tpOnibus.Controls.Add(this.btnDesacelerar_Onibus);
             this.tpOnibus.Controls.Add(this.btnAcelerar_Onibus);
             this.tpOnibus.Controls.Add(this.txtVelocidade_Onibus);
             this.tpOnibus.Controls.Add(this.label21);
-            this.tpOnibus.Controls.Add(this.txtModelo_Onibus);
             this.tpOnibus.Controls.Add(this.label22);
             this.tpOnibus.Controls.Add(this.txtNome_Onibus);
             this.tpOnibus.Controls.Add(this.label23);
@@ -827,7 +847,26 @@
             this.tpOnibus.Padding = new System.Windows.Forms.Padding(3);
             this.tpOnibus.Size = new System.Drawing.Size(474, 305);
             this.tpOnibus.TabIndex = 3;
+            this.tpOnibus.Tag = "Onibus";
             this.tpOnibus.Text = "Ônibus";
+            // 
+            // cbMarca_Onibus
+            // 
+            this.cbMarca_Onibus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Onibus.FormattingEnabled = true;
+            this.cbMarca_Onibus.Location = new System.Drawing.Point(71, 60);
+            this.cbMarca_Onibus.Name = "cbMarca_Onibus";
+            this.cbMarca_Onibus.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Onibus.TabIndex = 45;
+            // 
+            // cbModelo_Onibus
+            // 
+            this.cbModelo_Onibus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Onibus.FormattingEnabled = true;
+            this.cbModelo_Onibus.Location = new System.Drawing.Point(265, 22);
+            this.cbModelo_Onibus.Name = "cbModelo_Onibus";
+            this.cbModelo_Onibus.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Onibus.TabIndex = 44;
             // 
             // ckbPossuiLeitoSim_Onibus
             // 
@@ -914,13 +953,6 @@
             this.label24.TabIndex = 35;
             this.label24.Text = "Quantidade de Eixos:";
             // 
-            // txtMarca_Onibus
-            // 
-            this.txtMarca_Onibus.Location = new System.Drawing.Point(71, 60);
-            this.txtMarca_Onibus.Name = "txtMarca_Onibus";
-            this.txtMarca_Onibus.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Onibus.TabIndex = 29;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -968,13 +1000,6 @@
             this.label21.TabIndex = 24;
             this.label21.Text = "Velocidade:";
             // 
-            // txtModelo_Onibus
-            // 
-            this.txtModelo_Onibus.Location = new System.Drawing.Point(265, 21);
-            this.txtModelo_Onibus.Name = "txtModelo_Onibus";
-            this.txtModelo_Onibus.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Onibus.TabIndex = 23;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -1005,6 +1030,8 @@
             // tpAviao
             // 
             this.tpAviao.BackColor = System.Drawing.Color.Plum;
+            this.tpAviao.Controls.Add(this.cbMarca_Aviao);
+            this.tpAviao.Controls.Add(this.cbModelo_Aviao);
             this.tpAviao.Controls.Add(this.btnDecolar_Aviao);
             this.tpAviao.Controls.Add(this.btnArremeter_Aviao);
             this.tpAviao.Controls.Add(this.btnCadastrar_Aviao);
@@ -1012,13 +1039,11 @@
             this.tpAviao.Controls.Add(this.btnPousar_Aviao);
             this.tpAviao.Controls.Add(this.txtCapacidadePassageiros_Aviao);
             this.tpAviao.Controls.Add(this.label31);
-            this.tpAviao.Controls.Add(this.txtMarca_Aviao);
             this.tpAviao.Controls.Add(this.label27);
             this.tpAviao.Controls.Add(this.btnDesacelerar_Aviao);
             this.tpAviao.Controls.Add(this.btnAcelerar_Aviao);
             this.tpAviao.Controls.Add(this.txtVelocidade_Aviao);
             this.tpAviao.Controls.Add(this.label28);
-            this.tpAviao.Controls.Add(this.txtModelo_Aviao);
             this.tpAviao.Controls.Add(this.label29);
             this.tpAviao.Controls.Add(this.txtNome_Aviao);
             this.tpAviao.Controls.Add(this.label30);
@@ -1027,7 +1052,26 @@
             this.tpAviao.Padding = new System.Windows.Forms.Padding(3);
             this.tpAviao.Size = new System.Drawing.Size(474, 305);
             this.tpAviao.TabIndex = 4;
+            this.tpAviao.Tag = "Aviao";
             this.tpAviao.Text = "Avião";
+            // 
+            // cbMarca_Aviao
+            // 
+            this.cbMarca_Aviao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Aviao.FormattingEnabled = true;
+            this.cbMarca_Aviao.Location = new System.Drawing.Point(64, 67);
+            this.cbMarca_Aviao.Name = "cbMarca_Aviao";
+            this.cbMarca_Aviao.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Aviao.TabIndex = 49;
+            // 
+            // cbModelo_Aviao
+            // 
+            this.cbModelo_Aviao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Aviao.FormattingEnabled = true;
+            this.cbModelo_Aviao.Location = new System.Drawing.Point(258, 28);
+            this.cbModelo_Aviao.Name = "cbModelo_Aviao";
+            this.cbModelo_Aviao.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Aviao.TabIndex = 48;
             // 
             // btnDecolar_Aviao
             // 
@@ -1096,13 +1140,6 @@
             this.label31.TabIndex = 41;
             this.label31.Text = "Capacidade Passageiros:";
             // 
-            // txtMarca_Aviao
-            // 
-            this.txtMarca_Aviao.Location = new System.Drawing.Point(64, 68);
-            this.txtMarca_Aviao.Name = "txtMarca_Aviao";
-            this.txtMarca_Aviao.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Aviao.TabIndex = 39;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -1150,13 +1187,6 @@
             this.label28.TabIndex = 34;
             this.label28.Text = "Velocidade:";
             // 
-            // txtModelo_Aviao
-            // 
-            this.txtModelo_Aviao.Location = new System.Drawing.Point(258, 29);
-            this.txtModelo_Aviao.Name = "txtModelo_Aviao";
-            this.txtModelo_Aviao.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Aviao.TabIndex = 33;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1187,6 +1217,8 @@
             // tpAviaoDeGuerra
             // 
             this.tpAviaoDeGuerra.BackColor = System.Drawing.Color.LightSlateGray;
+            this.tpAviaoDeGuerra.Controls.Add(this.cbMarca_AviaoGuerra);
+            this.tpAviaoDeGuerra.Controls.Add(this.cbModelo_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.btnEjetar_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.btnDecolar_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.btnArremeter_AviaoGuerra);
@@ -1195,13 +1227,11 @@
             this.tpAviaoDeGuerra.Controls.Add(this.btnPousar_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.txtCapacidadePassageiros_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.label32);
-            this.tpAviaoDeGuerra.Controls.Add(this.txtMarca_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.label33);
             this.tpAviaoDeGuerra.Controls.Add(this.btnDesacelerar_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.btnAcelerar_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.txtVelocidade_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.label34);
-            this.tpAviaoDeGuerra.Controls.Add(this.txtModelo_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.label35);
             this.tpAviaoDeGuerra.Controls.Add(this.txtNome_AviaoGuerra);
             this.tpAviaoDeGuerra.Controls.Add(this.label36);
@@ -1210,7 +1240,26 @@
             this.tpAviaoDeGuerra.Padding = new System.Windows.Forms.Padding(3);
             this.tpAviaoDeGuerra.Size = new System.Drawing.Size(474, 305);
             this.tpAviaoDeGuerra.TabIndex = 5;
+            this.tpAviaoDeGuerra.Tag = "AviaoDeGuerra";
             this.tpAviaoDeGuerra.Text = "Avião de Guerra";
+            // 
+            // cbMarca_AviaoGuerra
+            // 
+            this.cbMarca_AviaoGuerra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_AviaoGuerra.FormattingEnabled = true;
+            this.cbMarca_AviaoGuerra.Location = new System.Drawing.Point(64, 68);
+            this.cbMarca_AviaoGuerra.Name = "cbMarca_AviaoGuerra";
+            this.cbMarca_AviaoGuerra.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_AviaoGuerra.TabIndex = 67;
+            // 
+            // cbModelo_AviaoGuerra
+            // 
+            this.cbModelo_AviaoGuerra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_AviaoGuerra.FormattingEnabled = true;
+            this.cbModelo_AviaoGuerra.Location = new System.Drawing.Point(258, 28);
+            this.cbModelo_AviaoGuerra.Name = "cbModelo_AviaoGuerra";
+            this.cbModelo_AviaoGuerra.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_AviaoGuerra.TabIndex = 66;
             // 
             // btnEjetar_AviaoGuerra
             // 
@@ -1289,13 +1338,6 @@
             this.label32.TabIndex = 58;
             this.label32.Text = "Capacidade Passageiros:";
             // 
-            // txtMarca_AviaoGuerra
-            // 
-            this.txtMarca_AviaoGuerra.Location = new System.Drawing.Point(64, 68);
-            this.txtMarca_AviaoGuerra.Name = "txtMarca_AviaoGuerra";
-            this.txtMarca_AviaoGuerra.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_AviaoGuerra.TabIndex = 57;
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -1343,13 +1385,6 @@
             this.label34.TabIndex = 52;
             this.label34.Text = "Velocidade:";
             // 
-            // txtModelo_AviaoGuerra
-            // 
-            this.txtModelo_AviaoGuerra.Location = new System.Drawing.Point(258, 29);
-            this.txtModelo_AviaoGuerra.Name = "txtModelo_AviaoGuerra";
-            this.txtModelo_AviaoGuerra.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_AviaoGuerra.TabIndex = 51;
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -1380,19 +1415,19 @@
             // tpTrem
             // 
             this.tpTrem.BackColor = System.Drawing.Color.LightGray;
+            this.tpTrem.Controls.Add(this.cbMarca_Trem);
+            this.tpTrem.Controls.Add(this.cbModelo_Trem);
             this.tpTrem.Controls.Add(this.txtQtdeVagoes_Trem);
             this.tpTrem.Controls.Add(this.label42);
             this.tpTrem.Controls.Add(this.btnCadastrar_Trem);
             this.tpTrem.Controls.Add(this.btnLimparVidros_Trem);
             this.tpTrem.Controls.Add(this.txtCapacidadePassageiros_Trem);
             this.tpTrem.Controls.Add(this.label37);
-            this.tpTrem.Controls.Add(this.txtMarca_Trem);
             this.tpTrem.Controls.Add(this.label38);
             this.tpTrem.Controls.Add(this.btnDesacelerar_Trem);
             this.tpTrem.Controls.Add(this.btnAcelerar_Trem);
             this.tpTrem.Controls.Add(this.txtVelocidade_Trem);
             this.tpTrem.Controls.Add(this.label39);
-            this.tpTrem.Controls.Add(this.txtModelo_Trem);
             this.tpTrem.Controls.Add(this.label40);
             this.tpTrem.Controls.Add(this.txtNome_Trem);
             this.tpTrem.Controls.Add(this.label41);
@@ -1401,7 +1436,26 @@
             this.tpTrem.Padding = new System.Windows.Forms.Padding(3);
             this.tpTrem.Size = new System.Drawing.Size(474, 305);
             this.tpTrem.TabIndex = 6;
+            this.tpTrem.Tag = "Trem";
             this.tpTrem.Text = "Trem";
+            // 
+            // cbMarca_Trem
+            // 
+            this.cbMarca_Trem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Trem.FormattingEnabled = true;
+            this.cbMarca_Trem.Location = new System.Drawing.Point(68, 68);
+            this.cbMarca_Trem.Name = "cbMarca_Trem";
+            this.cbMarca_Trem.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Trem.TabIndex = 84;
+            // 
+            // cbModelo_Trem
+            // 
+            this.cbModelo_Trem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Trem.FormattingEnabled = true;
+            this.cbModelo_Trem.Location = new System.Drawing.Point(262, 29);
+            this.cbModelo_Trem.Name = "cbModelo_Trem";
+            this.cbModelo_Trem.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Trem.TabIndex = 83;
             // 
             // txtQtdeVagoes_Trem
             // 
@@ -1457,13 +1511,6 @@
             this.label37.TabIndex = 76;
             this.label37.Text = "Capacidade Passageiros:";
             // 
-            // txtMarca_Trem
-            // 
-            this.txtMarca_Trem.Location = new System.Drawing.Point(68, 68);
-            this.txtMarca_Trem.Name = "txtMarca_Trem";
-            this.txtMarca_Trem.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Trem.TabIndex = 75;
-            // 
             // label38
             // 
             this.label38.AutoSize = true;
@@ -1511,13 +1558,6 @@
             this.label39.TabIndex = 70;
             this.label39.Text = "Velocidade:";
             // 
-            // txtModelo_Trem
-            // 
-            this.txtModelo_Trem.Location = new System.Drawing.Point(262, 29);
-            this.txtModelo_Trem.Name = "txtModelo_Trem";
-            this.txtModelo_Trem.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Trem.TabIndex = 69;
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -1548,17 +1588,17 @@
             // tpNavio
             // 
             this.tpNavio.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.tpNavio.Controls.Add(this.cbMarca_Navio);
+            this.tpNavio.Controls.Add(this.cbModelo_Navio);
             this.tpNavio.Controls.Add(this.btnCadastrar_Navio);
             this.tpNavio.Controls.Add(this.btnAtracar_Navio);
             this.tpNavio.Controls.Add(this.txtCapacidadePassageiros_Navio);
             this.tpNavio.Controls.Add(this.label44);
-            this.tpNavio.Controls.Add(this.txtMarca_Navio);
             this.tpNavio.Controls.Add(this.label45);
             this.tpNavio.Controls.Add(this.btnDesacelerar_Navio);
             this.tpNavio.Controls.Add(this.btnAcelerar_Navio);
             this.tpNavio.Controls.Add(this.txtVelocidade_Navio);
             this.tpNavio.Controls.Add(this.label46);
-            this.tpNavio.Controls.Add(this.txtModelo_Navio);
             this.tpNavio.Controls.Add(this.label47);
             this.tpNavio.Controls.Add(this.txtNome_Navio);
             this.tpNavio.Controls.Add(this.label48);
@@ -1567,7 +1607,26 @@
             this.tpNavio.Padding = new System.Windows.Forms.Padding(3);
             this.tpNavio.Size = new System.Drawing.Size(474, 305);
             this.tpNavio.TabIndex = 7;
+            this.tpNavio.Tag = "Navio";
             this.tpNavio.Text = "Navio";
+            // 
+            // cbMarca_Navio
+            // 
+            this.cbMarca_Navio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_Navio.FormattingEnabled = true;
+            this.cbMarca_Navio.Location = new System.Drawing.Point(68, 68);
+            this.cbMarca_Navio.Name = "cbMarca_Navio";
+            this.cbMarca_Navio.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_Navio.TabIndex = 98;
+            // 
+            // cbModelo_Navio
+            // 
+            this.cbModelo_Navio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_Navio.FormattingEnabled = true;
+            this.cbModelo_Navio.Location = new System.Drawing.Point(262, 28);
+            this.cbModelo_Navio.Name = "cbModelo_Navio";
+            this.cbModelo_Navio.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_Navio.TabIndex = 97;
             // 
             // btnCadastrar_Navio
             // 
@@ -1605,13 +1664,6 @@
             this.label44.Size = new System.Drawing.Size(158, 19);
             this.label44.TabIndex = 93;
             this.label44.Text = "Capacidade Passageiros:";
-            // 
-            // txtMarca_Navio
-            // 
-            this.txtMarca_Navio.Location = new System.Drawing.Point(68, 68);
-            this.txtMarca_Navio.Name = "txtMarca_Navio";
-            this.txtMarca_Navio.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_Navio.TabIndex = 92;
             // 
             // label45
             // 
@@ -1660,13 +1712,6 @@
             this.label46.TabIndex = 87;
             this.label46.Text = "Velocidade:";
             // 
-            // txtModelo_Navio
-            // 
-            this.txtModelo_Navio.Location = new System.Drawing.Point(262, 29);
-            this.txtModelo_Navio.Name = "txtModelo_Navio";
-            this.txtModelo_Navio.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_Navio.TabIndex = 86;
-            // 
             // label47
             // 
             this.label47.AutoSize = true;
@@ -1697,18 +1742,18 @@
             // tpNavioDeGuerra
             // 
             this.tpNavioDeGuerra.BackColor = System.Drawing.Color.LightSalmon;
+            this.tpNavioDeGuerra.Controls.Add(this.cbMarca_NavioGuerra);
+            this.tpNavioDeGuerra.Controls.Add(this.cbModelo_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.btnAtacar_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.btnCadastrar_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.btnAtracar_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.txtCapacidadePassageiros_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.label43);
-            this.tpNavioDeGuerra.Controls.Add(this.txtMarca_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.label49);
             this.tpNavioDeGuerra.Controls.Add(this.btnDesacelerar_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.btnAcelerar_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.txtVelocidade_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.label50);
-            this.tpNavioDeGuerra.Controls.Add(this.txtModelo_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.label51);
             this.tpNavioDeGuerra.Controls.Add(this.txtNome_NavioGuerra);
             this.tpNavioDeGuerra.Controls.Add(this.label52);
@@ -1717,7 +1762,26 @@
             this.tpNavioDeGuerra.Padding = new System.Windows.Forms.Padding(3);
             this.tpNavioDeGuerra.Size = new System.Drawing.Size(474, 305);
             this.tpNavioDeGuerra.TabIndex = 8;
+            this.tpNavioDeGuerra.Tag = "NavioDeGuerra";
             this.tpNavioDeGuerra.Text = "Navio de Guerra";
+            // 
+            // cbMarca_NavioGuerra
+            // 
+            this.cbMarca_NavioGuerra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca_NavioGuerra.FormattingEnabled = true;
+            this.cbMarca_NavioGuerra.Location = new System.Drawing.Point(68, 68);
+            this.cbMarca_NavioGuerra.Name = "cbMarca_NavioGuerra";
+            this.cbMarca_NavioGuerra.Size = new System.Drawing.Size(103, 21);
+            this.cbMarca_NavioGuerra.TabIndex = 113;
+            // 
+            // cbModelo_NavioGuerra
+            // 
+            this.cbModelo_NavioGuerra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbModelo_NavioGuerra.FormattingEnabled = true;
+            this.cbModelo_NavioGuerra.Location = new System.Drawing.Point(262, 29);
+            this.cbModelo_NavioGuerra.Name = "cbModelo_NavioGuerra";
+            this.cbModelo_NavioGuerra.Size = new System.Drawing.Size(103, 21);
+            this.cbModelo_NavioGuerra.TabIndex = 112;
             // 
             // btnAtacar_NavioGuerra
             // 
@@ -1731,7 +1795,7 @@
             // 
             // btnCadastrar_NavioGuerra
             // 
-            this.btnCadastrar_NavioGuerra.Location = new System.Drawing.Point(195, 235);
+            this.btnCadastrar_NavioGuerra.Location = new System.Drawing.Point(191, 235);
             this.btnCadastrar_NavioGuerra.Name = "btnCadastrar_NavioGuerra";
             this.btnCadastrar_NavioGuerra.Size = new System.Drawing.Size(84, 41);
             this.btnCadastrar_NavioGuerra.TabIndex = 110;
@@ -1765,13 +1829,6 @@
             this.label43.Size = new System.Drawing.Size(158, 19);
             this.label43.TabIndex = 107;
             this.label43.Text = "Capacidade Passageiros:";
-            // 
-            // txtMarca_NavioGuerra
-            // 
-            this.txtMarca_NavioGuerra.Location = new System.Drawing.Point(68, 68);
-            this.txtMarca_NavioGuerra.Name = "txtMarca_NavioGuerra";
-            this.txtMarca_NavioGuerra.Size = new System.Drawing.Size(103, 20);
-            this.txtMarca_NavioGuerra.TabIndex = 106;
             // 
             // label49
             // 
@@ -1820,13 +1877,6 @@
             this.label50.TabIndex = 101;
             this.label50.Text = "Velocidade:";
             // 
-            // txtModelo_NavioGuerra
-            // 
-            this.txtModelo_NavioGuerra.Location = new System.Drawing.Point(262, 29);
-            this.txtModelo_NavioGuerra.Name = "txtModelo_NavioGuerra";
-            this.txtModelo_NavioGuerra.Size = new System.Drawing.Size(103, 20);
-            this.txtModelo_NavioGuerra.TabIndex = 100;
-            // 
             // label51
             // 
             this.label51.AutoSize = true;
@@ -1853,6 +1903,38 @@
             this.label52.Size = new System.Drawing.Size(50, 19);
             this.label52.TabIndex = 97;
             this.label52.Text = "Nome:";
+            // 
+            // Registros
+            // 
+            this.Registros.BackColor = System.Drawing.Color.LightCoral;
+            this.Registros.Controls.Add(this.btnRegistrar);
+            this.Registros.Controls.Add(this.label53);
+            this.Registros.Location = new System.Drawing.Point(4, 22);
+            this.Registros.Name = "Registros";
+            this.Registros.Padding = new System.Windows.Forms.Padding(3);
+            this.Registros.Size = new System.Drawing.Size(474, 305);
+            this.Registros.TabIndex = 9;
+            this.Registros.Text = "tabPage1";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(24, 93);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(427, 21);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "Clique no botão para registrar os veículos cadastrados:";
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Location = new System.Drawing.Point(144, 162);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(199, 49);
+            this.btnRegistrar.TabIndex = 1;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // FrmCadastroVeiculos
             // 
@@ -1883,6 +1965,8 @@
             this.tpNavio.PerformLayout();
             this.tpNavioDeGuerra.ResumeLayout(false);
             this.tpNavioDeGuerra.PerformLayout();
+            this.Registros.ResumeLayout(false);
+            this.Registros.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1898,13 +1982,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtQtdePortas_Carro;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtMarca_Carro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_Desacelerar_Carro;
         private System.Windows.Forms.Button btnAcelerar_Carro;
         private System.Windows.Forms.TextBox txtVelocidade_Carro;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtModelo_Carro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNome_Carro;
         private System.Windows.Forms.Label label1;
@@ -1922,13 +2004,11 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtPesoCarregado_Caminhao;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtMarca_Caminhao;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnDesacelerar_Caminhao;
         private System.Windows.Forms.Button btnAcelerar_Caminhao;
         private System.Windows.Forms.TextBox txtVelocidade_Caminhao;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtModelo_Caminhao;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNome_Caminhao;
         private System.Windows.Forms.Label label10;
@@ -1938,13 +2018,11 @@
         private System.Windows.Forms.Button btnPagarPedagio_Moto;
         private System.Windows.Forms.TextBox txtCapacidadePassageiros_Moto;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtMarca_Moto;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnDesacelerar_Moto;
         private System.Windows.Forms.Button btnAcelerar_Moto;
         private System.Windows.Forms.TextBox txtVelocidade_Moto;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtModelo_Moto;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtNome_Moto;
         private System.Windows.Forms.Label label18;
@@ -1958,13 +2036,11 @@
         private System.Windows.Forms.Button btnPagarPedagio_Onibus;
         private System.Windows.Forms.TextBox txtQtdeEixos_Onibus;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtMarca_Onibus;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnDesacelerar_Onibus;
         private System.Windows.Forms.Button btnAcelerar_Onibus;
         private System.Windows.Forms.TextBox txtVelocidade_Onibus;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox txtModelo_Onibus;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtNome_Onibus;
         private System.Windows.Forms.Label label23;
@@ -1976,13 +2052,11 @@
         private System.Windows.Forms.Button btnPousar_Aviao;
         private System.Windows.Forms.TextBox txtCapacidadePassageiros_Aviao;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox txtMarca_Aviao;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnDesacelerar_Aviao;
         private System.Windows.Forms.Button btnAcelerar_Aviao;
         private System.Windows.Forms.TextBox txtVelocidade_Aviao;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox txtModelo_Aviao;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtNome_Aviao;
         private System.Windows.Forms.Label label30;
@@ -1995,13 +2069,11 @@
         private System.Windows.Forms.Button btnPousar_AviaoGuerra;
         private System.Windows.Forms.TextBox txtCapacidadePassageiros_AviaoGuerra;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox txtMarca_AviaoGuerra;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button btnDesacelerar_AviaoGuerra;
         private System.Windows.Forms.Button btnAcelerar_AviaoGuerra;
         private System.Windows.Forms.TextBox txtVelocidade_AviaoGuerra;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtModelo_AviaoGuerra;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox txtNome_AviaoGuerra;
         private System.Windows.Forms.Label label36;
@@ -2012,13 +2084,11 @@
         private System.Windows.Forms.Button btnLimparVidros_Trem;
         private System.Windows.Forms.TextBox txtCapacidadePassageiros_Trem;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox txtMarca_Trem;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Button btnDesacelerar_Trem;
         private System.Windows.Forms.Button btnAcelerar_Trem;
         private System.Windows.Forms.TextBox txtVelocidade_Trem;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox txtModelo_Trem;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox txtNome_Trem;
         private System.Windows.Forms.Label label41;
@@ -2027,13 +2097,11 @@
         private System.Windows.Forms.Button btnAtracar_Navio;
         private System.Windows.Forms.TextBox txtCapacidadePassageiros_Navio;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox txtMarca_Navio;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Button btnDesacelerar_Navio;
         private System.Windows.Forms.Button btnAcelerar_Navio;
         private System.Windows.Forms.TextBox txtVelocidade_Navio;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox txtModelo_Navio;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.TextBox txtNome_Navio;
         private System.Windows.Forms.Label label48;
@@ -2043,15 +2111,34 @@
         private System.Windows.Forms.Button btnAtracar_NavioGuerra;
         private System.Windows.Forms.TextBox txtCapacidadePassageiros_NavioGuerra;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox txtMarca_NavioGuerra;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Button btnDesacelerar_NavioGuerra;
         private System.Windows.Forms.Button btnAcelerar_NavioGuerra;
         private System.Windows.Forms.TextBox txtVelocidade_NavioGuerra;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox txtModelo_NavioGuerra;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox txtNome_NavioGuerra;
         private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.ComboBox cbModelo_Carro;
+        private System.Windows.Forms.ComboBox cbMarca_Carro;
+        private System.Windows.Forms.ComboBox cbModelo_Caminhao;
+        private System.Windows.Forms.ComboBox cbModelo_Moto;
+        private System.Windows.Forms.ComboBox cbModelo_Onibus;
+        private System.Windows.Forms.ComboBox cbModelo_Aviao;
+        private System.Windows.Forms.ComboBox cbModelo_AviaoGuerra;
+        private System.Windows.Forms.ComboBox cbModelo_Trem;
+        private System.Windows.Forms.ComboBox cbModelo_Navio;
+        private System.Windows.Forms.ComboBox cbModelo_NavioGuerra;
+        private System.Windows.Forms.ComboBox cbMarca_Caminhao;
+        private System.Windows.Forms.ComboBox cbMarca_Moto;
+        private System.Windows.Forms.ComboBox cbMarca_Onibus;
+        private System.Windows.Forms.ComboBox cbMarca_Aviao;
+        private System.Windows.Forms.ComboBox cbMarca_AviaoGuerra;
+        private System.Windows.Forms.ComboBox cbMarca_Trem;
+        private System.Windows.Forms.ComboBox cbMarca_Navio;
+        private System.Windows.Forms.ComboBox cbMarca_NavioGuerra;
+        private System.Windows.Forms.TabPage Registros;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label label53;
     }
 }

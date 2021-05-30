@@ -1,0 +1,15 @@
+[
+  {
+    "velocidade": 0,
+    "Identificacao": "navio2",
+    "CapacidadePassageiros": 30,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  }
+]

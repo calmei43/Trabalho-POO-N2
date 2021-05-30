@@ -83,6 +83,26 @@ namespace Trabalho_POO_N2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cashier2_117800 {
+            get {
+                object obj = ResourceManager.GetObject("cashier2_117800", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cashier2_118071 {
+            get {
+                object obj = ResourceManager.GetObject("cashier2_118071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap veiculos {
             get {
                 object obj = ResourceManager.GetObject("veiculos", resourceCulture);

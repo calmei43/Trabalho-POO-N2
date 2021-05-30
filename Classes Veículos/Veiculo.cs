@@ -9,7 +9,7 @@ namespace Trabalho_POO_N2
     public class Veiculo
     {
         #region Atributos
-        public string Identificação { get; set; }
+        public string Identificacao { get; set; }
         public int CapacidadePassageiros { get; set; }
         public Modelo Modelo { get; set; }
 
@@ -17,11 +17,33 @@ namespace Trabalho_POO_N2
         #endregion
 
         #region Metodos
-        public void Acelera() => velocidade++;
-        public void Desacelera() => velocidade--;
+        public void Acelera()
+        {
+            velocidade++;
+
+            Console.Write($"{Identificacao} acelerando...");
+            Console.Write($"Velocidade: {velocidade}");
+
+        }
+
+        public void Desacelera()
+        {
+            velocidade--;
+
+            Console.Write($"{Identificacao} freando...");
+            Console.Write($"Velocidade: {velocidade}");
+        }
+
+        public override string ToString()
+        {
+            string retorno = "Identificação: " + Identificacao + Environment.NewLine +
+                "Capacidade Passageiros: " + CapacidadePassageiros + Environment.NewLine +
+                "Modelo: " + Modelo.Descricao + Environment.NewLine +
+                "Velocidade: " + velocidade;
+
+            return retorno;
+        }
         #endregion
-
-
 
     }
 }
