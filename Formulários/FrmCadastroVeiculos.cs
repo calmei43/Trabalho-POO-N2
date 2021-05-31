@@ -33,6 +33,7 @@ namespace Trabalho_POO_N2.Formulários
 
             CarregaMarcas();
             CarregaModelos();
+            CarregaVeiculos();
 
             PreencheArrayComboBoxMarca();
             PreencheArrayComboBoxModelo();
@@ -145,7 +146,7 @@ namespace Trabalho_POO_N2.Formulários
         }
         #endregion
 
-        #region Metodos Carrega Modelo/Marca Combobox
+        #region Metodos Carrega Modelo/Marca/Veiculos Combobox
         void CarregaMarcas()
         {
             listaMarcas = JsonConvert.DeserializeObject<List<Marca>>(File.ReadAllText("marcas.json"));
@@ -153,6 +154,20 @@ namespace Trabalho_POO_N2.Formulários
         void CarregaModelos()
         {
             listaModelos = JsonConvert.DeserializeObject<List<Modelo>>(File.ReadAllText("modelos.json"));
+        }
+
+        void CarregaVeiculos()
+        {
+            listaCarros = JsonConvert.DeserializeObject<List<Carro>>(File.ReadAllText("carros.json"));
+            listaAvioes = JsonConvert.DeserializeObject<List<Aviao>>(File.ReadAllText("avioes.json"));
+            listaAvioesDeGuerra = JsonConvert.DeserializeObject<List<AviaoDeGuerra>>(File.ReadAllText("avioesdeguerra.json"));
+            listaCaminhoes = JsonConvert.DeserializeObject<List<Caminhao>>(File.ReadAllText("caminhoes.json"));
+            listaMotos = JsonConvert.DeserializeObject<List<Moto>>(File.ReadAllText("motos.json"));
+            listaNavios = JsonConvert.DeserializeObject<List<Navio>>(File.ReadAllText("navios.json"));
+            listaNaviosDeGuerra = JsonConvert.DeserializeObject<List<NavioGuerra>>(File.ReadAllText("naviosdeguerra.json"));
+            listaOnibus = JsonConvert.DeserializeObject<List<Onibus>>(File.ReadAllText("onibus.json"));
+            listaTrens = JsonConvert.DeserializeObject<List<Trem>>(File.ReadAllText("trens.json"));
+            
         }
 
         void PreencheArrayComboBoxMarca()
@@ -637,9 +652,11 @@ namespace Trabalho_POO_N2.Formulários
         {
             FormController.CurrentForm = currentForm;
         }
+       
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void FrmCadastroVeiculos_FormClosed(object sender, FormClosedEventArgs e)
         {
+
             File.WriteAllText("carros.json", JsonConvert.SerializeObject(listaCarros, Formatting.Indented));
             File.WriteAllText("caminhoes.json", JsonConvert.SerializeObject(listaCaminhoes, Formatting.Indented));
             File.WriteAllText("motos.json", JsonConvert.SerializeObject(listaMotos, Formatting.Indented));

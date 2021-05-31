@@ -1,15 +1,1 @@
-[
-  {
-    "velocidade": 0,
-    "Identificacao": "moto2",
-    "CapacidadePassageiros": 2,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  }
-]
+[]

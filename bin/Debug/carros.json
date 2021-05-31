@@ -1,9 +1,23 @@
 [
   {
-    "velocidade": 0,
-    "QuantidadePortas": 2,
+    "velocidade": 3,
+    "QuantidadePortas": 4,
     "Identificacao": "carro2",
     "CapacidadePassageiros": 4,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  },
+  {
+    "velocidade": 3,
+    "QuantidadePortas": 4,
+    "Identificacao": "carro1",
+    "CapacidadePassageiros": 5,
     "Modelo": {
       "Codigo": 2989,
       "Descricao": "KA",
