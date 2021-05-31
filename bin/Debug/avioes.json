@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "velocidade": 1,
+    "Identificacao": "aviao1",
+    "CapacidadePassageiros": 100,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  },
+  {
+    "velocidade": 0,
+    "Identificacao": "aviao1",
+    "CapacidadePassageiros": 128,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  }
+]

@@ -98,6 +98,7 @@
             this.Name = "FrmListar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listar Veículos Cadastrados";
+            this.Load += new System.EventHandler(this.FrmListar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

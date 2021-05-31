@@ -1,0 +1,17 @@
+[
+  {
+    "ValorTotalAcumulado": 191.0,
+    "Identificação": "pedagio1",
+    "Localização": "Anchieta Km 31"
+  },
+  {
+    "ValorTotalAcumulado": 93.5,
+    "Identificação": "pedagio2",
+    "Localização": "Imigrantes Km 16"
+  },
+  {
+    "ValorTotalAcumulado": 93.5,
+    "Identificação": "pedagio3",
+    "Localização": "teste"
+  }
+]

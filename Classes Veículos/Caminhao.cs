@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Trabalho_POO_N2.Interfaces;
 
 namespace Trabalho_POO_N2
@@ -29,7 +30,7 @@ namespace Trabalho_POO_N2
         {
             PesoCarregado += peso;
 
-            Console.WriteLine($"{Identificacao} carregando...");
+            MessageBox.Show($"{Identificacao} carregando...");
 
         }
 
@@ -39,7 +40,7 @@ namespace Trabalho_POO_N2
         public void Descarregar()
         {
             PesoCarregado = 0;
-            Console.WriteLine($"{Identificacao} descarregando...");
+            MessageBox.Show($"{Identificacao} descarregando...");
         }
 
         /// <summary>
@@ -54,7 +55,7 @@ namespace Trabalho_POO_N2
             }
 
         }
-        public void Limpador() => Console.WriteLine($"Limpador Ativado/Desativado do {Identificacao}...");
+        public void Limpador() => MessageBox.Show($"Limpador do Caminhao {Identificacao} Ativado/Desativado...");
 
         public void PagaPedagio(Pedagio pedagio)
         {

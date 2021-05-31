@@ -224,5 +224,10 @@ namespace Trabalho_POO_N2.Formulários
                 }
             }
         }
+
+        private void FrmListar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

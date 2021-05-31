@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Trabalho_POO_N2.Interfaces;
 
 namespace Trabalho_POO_N2
@@ -16,7 +17,7 @@ namespace Trabalho_POO_N2
         #endregion
 
         #region Metodos
-        public void Limpador() => Console.WriteLine($"Limpador Ativado/Desativado do {Identificacao}...");
+        public void Limpador() => MessageBox.Show($"Limpador do Carro {Identificacao} Ativado/Desativado...");
 
         public void PagaPedagio(Pedagio pedagio)
         {            

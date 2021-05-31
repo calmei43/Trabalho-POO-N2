@@ -115,6 +115,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.tpOnibus = new System.Windows.Forms.TabPage();
+            this.cbPedagio_Onibus = new System.Windows.Forms.ComboBox();
             this.cbMarca_Onibus = new System.Windows.Forms.ComboBox();
             this.cbModelo_Onibus = new System.Windows.Forms.ComboBox();
             this.ckbPossuiLeitoSim_Onibus = new System.Windows.Forms.CheckBox();
@@ -135,6 +136,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.tpMoto = new System.Windows.Forms.TabPage();
+            this.cbPedagio_Moto = new System.Windows.Forms.ComboBox();
             this.cbMarca_Moto = new System.Windows.Forms.ComboBox();
             this.cbModelo_Moto = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Moto = new System.Windows.Forms.Button();
@@ -151,6 +153,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tpCaminhao = new System.Windows.Forms.TabPage();
+            this.cbPedagio_Caminhao = new System.Windows.Forms.ComboBox();
             this.cbMarca_Caminhao = new System.Windows.Forms.ComboBox();
             this.cbModelo_Caminhao = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Caminhao = new System.Windows.Forms.Button();
@@ -176,6 +179,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tcVeiculo = new System.Windows.Forms.TabControl();
             this.tpCarro = new System.Windows.Forms.TabPage();
+            this.cbPedagio_Carro = new System.Windows.Forms.ComboBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
@@ -199,10 +203,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbPedagio_Carro = new System.Windows.Forms.ComboBox();
-            this.cbPedagio_Caminhao = new System.Windows.Forms.ComboBox();
-            this.cbPedagio_Moto = new System.Windows.Forms.ComboBox();
-            this.cbPedagio_Onibus = new System.Windows.Forms.ComboBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cbPedagio_TodosVeiculos = new System.Windows.Forms.ComboBox();
+            this.btnPagarTodosVeiculos = new System.Windows.Forms.Button();
             this.tpNavioDeGuerra.SuspendLayout();
             this.tpNavio.SuspendLayout();
             this.tpTrem.SuspendLayout();
@@ -213,6 +216,7 @@
             this.tpCaminhao.SuspendLayout();
             this.tcVeiculo.SuspendLayout();
             this.tpCarro.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpNavioDeGuerra
@@ -1134,6 +1138,15 @@
             this.tpOnibus.Tag = "Onibus";
             this.tpOnibus.Text = "Ônibus";
             // 
+            // cbPedagio_Onibus
+            // 
+            this.cbPedagio_Onibus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Onibus.FormattingEnabled = true;
+            this.cbPedagio_Onibus.Location = new System.Drawing.Point(365, 184);
+            this.cbPedagio_Onibus.Name = "cbPedagio_Onibus";
+            this.cbPedagio_Onibus.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Onibus.TabIndex = 46;
+            // 
             // cbMarca_Onibus
             // 
             this.cbMarca_Onibus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1340,6 +1353,15 @@
             this.tpMoto.Tag = "Moto";
             this.tpMoto.Text = "Moto";
             // 
+            // cbPedagio_Moto
+            // 
+            this.cbPedagio_Moto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Moto.FormattingEnabled = true;
+            this.cbPedagio_Moto.Location = new System.Drawing.Point(236, 241);
+            this.cbPedagio_Moto.Name = "cbPedagio_Moto";
+            this.cbPedagio_Moto.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Moto.TabIndex = 41;
+            // 
             // cbMarca_Moto
             // 
             this.cbMarca_Moto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1515,6 +1537,15 @@
             this.tpCaminhao.TabIndex = 1;
             this.tpCaminhao.Tag = "Caminhao";
             this.tpCaminhao.Text = "Caminhão";
+            // 
+            // cbPedagio_Caminhao
+            // 
+            this.cbPedagio_Caminhao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Caminhao.FormattingEnabled = true;
+            this.cbPedagio_Caminhao.Location = new System.Drawing.Point(361, 192);
+            this.cbPedagio_Caminhao.Name = "cbPedagio_Caminhao";
+            this.cbPedagio_Caminhao.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Caminhao.TabIndex = 38;
             // 
             // cbMarca_Caminhao
             // 
@@ -1739,6 +1770,7 @@
             this.tcVeiculo.Controls.Add(this.tpTrem);
             this.tcVeiculo.Controls.Add(this.tpNavio);
             this.tcVeiculo.Controls.Add(this.tpNavioDeGuerra);
+            this.tcVeiculo.Controls.Add(this.tabPage1);
             this.tcVeiculo.Location = new System.Drawing.Point(0, 2);
             this.tcVeiculo.Name = "tcVeiculo";
             this.tcVeiculo.SelectedIndex = 0;
@@ -1779,6 +1811,15 @@
             this.tpCarro.TabIndex = 0;
             this.tpCarro.Tag = "Carro";
             this.tpCarro.Text = "Carro";
+            // 
+            // cbPedagio_Carro
+            // 
+            this.cbPedagio_Carro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Carro.FormattingEnabled = true;
+            this.cbPedagio_Carro.Location = new System.Drawing.Point(361, 218);
+            this.cbPedagio_Carro.Name = "cbPedagio_Carro";
+            this.cbPedagio_Carro.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Carro.TabIndex = 25;
             // 
             // label58
             // 
@@ -1992,53 +2033,49 @@
             this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 0;
             // 
-            // cbPedagio_Carro
+            // tabPage1
             // 
-            this.cbPedagio_Carro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbPedagio_Carro.FormattingEnabled = true;
-            this.cbPedagio_Carro.Location = new System.Drawing.Point(361, 218);
-            this.cbPedagio_Carro.Name = "cbPedagio_Carro";
-            this.cbPedagio_Carro.Size = new System.Drawing.Size(103, 21);
-            this.cbPedagio_Carro.TabIndex = 25;
+            this.tabPage1.BackColor = System.Drawing.Color.Maroon;
+            this.tabPage1.Controls.Add(this.cbPedagio_TodosVeiculos);
+            this.tabPage1.Controls.Add(this.btnPagarTodosVeiculos);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(474, 305);
+            this.tabPage1.TabIndex = 9;
+            this.tabPage1.Text = "tabPage1";
             // 
-            // cbPedagio_Caminhao
+            // cbPedagio_TodosVeiculos
             // 
-            this.cbPedagio_Caminhao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbPedagio_Caminhao.FormattingEnabled = true;
-            this.cbPedagio_Caminhao.Location = new System.Drawing.Point(361, 192);
-            this.cbPedagio_Caminhao.Name = "cbPedagio_Caminhao";
-            this.cbPedagio_Caminhao.Size = new System.Drawing.Size(103, 21);
-            this.cbPedagio_Caminhao.TabIndex = 38;
+            this.cbPedagio_TodosVeiculos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_TodosVeiculos.FormattingEnabled = true;
+            this.cbPedagio_TodosVeiculos.Location = new System.Drawing.Point(237, 106);
+            this.cbPedagio_TodosVeiculos.Name = "cbPedagio_TodosVeiculos";
+            this.cbPedagio_TodosVeiculos.Size = new System.Drawing.Size(124, 21);
+            this.cbPedagio_TodosVeiculos.TabIndex = 113;
             // 
-            // cbPedagio_Moto
+            // btnPagarTodosVeiculos
             // 
-            this.cbPedagio_Moto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbPedagio_Moto.FormattingEnabled = true;
-            this.cbPedagio_Moto.Location = new System.Drawing.Point(236, 241);
-            this.cbPedagio_Moto.Name = "cbPedagio_Moto";
-            this.cbPedagio_Moto.Size = new System.Drawing.Size(103, 21);
-            this.cbPedagio_Moto.TabIndex = 41;
-            // 
-            // cbPedagio_Onibus
-            // 
-            this.cbPedagio_Onibus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbPedagio_Onibus.FormattingEnabled = true;
-            this.cbPedagio_Onibus.Location = new System.Drawing.Point(365, 184);
-            this.cbPedagio_Onibus.Name = "cbPedagio_Onibus";
-            this.cbPedagio_Onibus.Size = new System.Drawing.Size(103, 21);
-            this.cbPedagio_Onibus.TabIndex = 46;
+            this.btnPagarTodosVeiculos.Location = new System.Drawing.Point(66, 91);
+            this.btnPagarTodosVeiculos.Name = "btnPagarTodosVeiculos";
+            this.btnPagarTodosVeiculos.Size = new System.Drawing.Size(106, 49);
+            this.btnPagarTodosVeiculos.TabIndex = 0;
+            this.btnPagarTodosVeiculos.Text = "Pagar pedagio de todos veiculos";
+            this.btnPagarTodosVeiculos.UseVisualStyleBackColor = true;
+            this.btnPagarTodosVeiculos.Click += new System.EventHandler(this.btnPagarTodosVeiculos_Click);
             // 
             // FrmCadastroVeiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 327);
+            this.ClientSize = new System.Drawing.Size(480, 326);
             this.Controls.Add(this.tcVeiculo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCadastroVeiculos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Veiculos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCadastroVeiculos_FormClosed);
+            this.Load += new System.EventHandler(this.FrmCadastroVeiculos_Load);
             this.tpNavioDeGuerra.ResumeLayout(false);
             this.tpNavioDeGuerra.PerformLayout();
             this.tpNavio.ResumeLayout(false);
@@ -2058,6 +2095,7 @@
             this.tcVeiculo.ResumeLayout(false);
             this.tpCarro.ResumeLayout(false);
             this.tpCarro.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2237,5 +2275,8 @@
         private System.Windows.Forms.ComboBox cbPedagio_Caminhao;
         private System.Windows.Forms.ComboBox cbPedagio_Onibus;
         private System.Windows.Forms.ComboBox cbPedagio_Moto;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ComboBox cbPedagio_TodosVeiculos;
+        private System.Windows.Forms.Button btnPagarTodosVeiculos;
     }
 }

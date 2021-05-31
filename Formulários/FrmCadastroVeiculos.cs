@@ -34,9 +34,11 @@ namespace Trabalho_POO_N2.Formulários
             CarregaMarcas();
             CarregaModelos();
             CarregaVeiculos();
+            CarregaPedagios();
 
             PreencheArrayComboBoxMarca();
             PreencheArrayComboBoxModelo();
+            PreencheArrayComboBoxPedagio();
         }
 
         #region Listas
@@ -82,7 +84,7 @@ namespace Trabalho_POO_N2.Formulários
                 {
                     item.Acelera();
                     (textBox as TextBox).Text = item.velocidade.ToString();
-                    break;
+                    return;
                 }
             }
 
@@ -92,28 +94,67 @@ namespace Trabalho_POO_N2.Formulários
         {
             foreach (var item in ListaVeiculos())
             {
-                item.Desacelera();
-                (textBox as TextBox).Text = item.velocidade.ToString();
-                break;
+                if (item.Identificacao == identificacao)
+                {
+                    item.Desacelera();
+                    (textBox as TextBox).Text = item.velocidade.ToString();
+                    return;
+                }
             }
             MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void Limpador()
+        void Limpador(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
-                if (item is ILimpador)
-                    (item as ILimpador).Limpador();
+                if (item.Identificacao == identificacao)
+                {
+                    if (item is Carro)
+                    {
+                        (item as Carro).Limpador();
+                        return;
+                    }
+                    else if (item is Caminhao)
+                    {
+                        (item as Caminhao).Limpador();
+                        return;
+                    }
+                    else if (item is Onibus)
+                    { 
+                        (item as Onibus).Limpador();
+                        return;
+                    }
+                    else if (item is Aviao)
+                    { 
+                        (item as Aviao).Limpador();
+                        return;
+                    }
+                    else
+                    { 
+                        (item as Trem).Limpador();
+                        return;
+                    }
+                }
             }
+
+            MessageBox.Show("Não existe veículo com este nome!");
         }
         void Atacar(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
-                if (item is IAtacar)
+                if (item.Identificacao == identificacao)
                 {
-                    (item as IAtacar).Atacar();
-                    break;
+                    if (item is AviaoDeGuerra)
+                    {
+                        (item as AviaoDeGuerra).Atacar();
+                        return;
+                    }
+                    else
+                    {
+                        (item as NavioGuerra).Atacar();
+                        return;
+                    }
                 }
             }
             MessageBox.Show("Não tem veículo salvo com este nome!");
@@ -122,10 +163,18 @@ namespace Trabalho_POO_N2.Formulários
         {
             foreach (var item in ListaVeiculos())
             {
-                if (item is IAtracar)
+                if (item.Identificacao == identificacao)
                 {
-                    (item as IAtracar).Atracar();
-                    break;
+                    if (item is Navio)
+                    {
+                        (item as Navio).Atracar();
+                        return;
+                    }
+                    else
+                    {
+                        (item as NavioGuerra).Atracar();
+                        return;
+                    }
                 }
             }
             MessageBox.Show("Não tem veículo salvo com este nome!");
@@ -134,10 +183,18 @@ namespace Trabalho_POO_N2.Formulários
         {
             foreach (var item in ListaVeiculos())
             {
-                if (item is IAviao)
+                if (item.Identificacao == identificacao)
                 {
-                    (item as IAviao).Pousar();
-                    break;
+                    if (item is Aviao)
+                    {
+                        (item as Aviao).Pousar();
+                        return;
+                    }
+                    else
+                    {
+                        (item as AviaoDeGuerra).Pousar();
+                        return;
+                    }
                 }
             }
             MessageBox.Show("Não tem veículo salvo com este nome!");
@@ -146,10 +203,18 @@ namespace Trabalho_POO_N2.Formulários
         {
             foreach (var item in ListaVeiculos())
             {
-                if (item is IAviao)
+                if (item.Identificacao == identificacao)
                 {
-                    (item as IAviao).Arremeter();
-                    break;
+                    if (item is Aviao)
+                    {
+                        (item as Aviao).Arremeter();
+                        return;
+                    }
+                    else
+                    {
+                        (item as AviaoDeGuerra).Arremeter();
+                        return;
+                    }
                 }
             }
             MessageBox.Show("Não tem veículo salvo com este nome!");
@@ -158,18 +223,26 @@ namespace Trabalho_POO_N2.Formulários
         {
             foreach (var item in ListaVeiculos())
             {
-                if (item is IAviao)
+                if (item.Identificacao == identificacao)
                 {
-                    (item as IAviao).Decolar();
-                    break;
+                    if (item is Aviao)
+                    {
+                        (item as Aviao).Decolar();
+                        return;
+                    }
+                    else
+                    {
+                        (item as AviaoDeGuerra).Decolar();
+                        return;
+                    }
                 }
             }
             MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-       
+
         #endregion
 
-        #region Metodos Carrega Modelo/Marca/Veiculos Combobox
+        #region Metodos Carrega Modelo/Marca/Veiculos/Pedagios Combobox
         void CarregaMarcas()
         {
             listaMarcas = JsonConvert.DeserializeObject<List<Marca>>(File.ReadAllText("marcas.json"));
@@ -190,7 +263,12 @@ namespace Trabalho_POO_N2.Formulários
             listaNaviosDeGuerra = JsonConvert.DeserializeObject<List<NavioGuerra>>(File.ReadAllText("naviosdeguerra.json"));
             listaOnibus = JsonConvert.DeserializeObject<List<Onibus>>(File.ReadAllText("onibus.json"));
             listaTrens = JsonConvert.DeserializeObject<List<Trem>>(File.ReadAllText("trens.json"));
-            
+
+        }
+
+        void CarregaPedagios()
+        {
+            listaPedagio = JsonConvert.DeserializeObject<List<Pedagio>>(File.ReadAllText("pedagios.json"));
         }
 
         void PreencheArrayComboBoxMarca()
@@ -205,6 +283,7 @@ namespace Trabalho_POO_N2.Formulários
                     cb.Items.Add(item);
                     cb.DisplayMember = "Descricao";
                 }
+                cb.SelectedIndex = 0;
             }
         }
         void PreencheArrayComboBoxModelo()
@@ -219,6 +298,22 @@ namespace Trabalho_POO_N2.Formulários
                     cb.Items.Add(item);
                     cb.DisplayMember = "Descricao";
                 }
+                cb.SelectedIndex = 0;
+            }
+        }
+
+        void PreencheArrayComboBoxPedagio()
+        {
+            ComboBox[] arrayCbPedagio = {cbPedagio_Carro, cbPedagio_Moto, cbPedagio_Onibus, cbPedagio_Caminhao, cbPedagio_TodosVeiculos};
+
+            foreach (var cb in arrayCbPedagio)
+            {
+                foreach (var item in listaPedagio)
+                {
+                    cb.Items.Add(item);
+                    cb.DisplayMember = "Identificação";                    
+                }
+                cb.SelectedIndex = 0;
             }
         }
 
@@ -258,17 +353,14 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnPagarPedagio_Carro_Click(object sender, EventArgs e)
         {
-            foreach(var item in ListaVeiculos())
-            {
+            foreach (var item in listaCarros)
                 if (item.Identificacao == txtNome_Carro.Text)
-                { }
-                    
-            }
+                    item.PagaPedagio((Pedagio)cbPedagio_Carro.SelectedItem);
         }
 
         private void btnLimparVidros_Carro_Click(object sender, EventArgs e)
         {
-            Limpador();
+            Limpador(txtNome_Carro.Text);
         }
         #endregion
 
@@ -311,17 +403,14 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnPagarPedagio_Caminhao_Click(object sender, EventArgs e)
         {
-            foreach (var item in ListaVeiculos())
-            {
+            foreach (var item in listaCaminhoes)
                 if (item.Identificacao == txtNome_Caminhao.Text)
-                { }
-                    
-            }
+                    item.PagaPedagio((Pedagio)cbPedagio_Caminhao.SelectedItem);
         }
 
         private void btnLimparVidros_Caminhao_Click(object sender, EventArgs e)
         {
-            Limpador();
+            Limpador(txtNome_Caminhao.Text);
         }
 
         private void btnCarregar_Caminhao_Click(object sender, EventArgs e)
@@ -378,20 +467,22 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnPagarPedagio_Moto_Click(object sender, EventArgs e)
         {
-            foreach (var item in ListaVeiculos())
-            {
+            foreach (var item in listaMotos)
                 if (item.Identificacao == txtNome_Moto.Text)
-                { }
-
-            }
+                    item.PagaPedagio((Pedagio)cbPedagio_Moto.SelectedItem);
         }
 
         private void btnEmpinar_Moto_Click(object sender, EventArgs e)
         {
             foreach (Moto v in listaMotos)
             {
-                v.Empinar();
+                if (v.Identificacao == txtNome_Moto.Text)
+                {
+                    v.Empinar();
+                    return;
+                }
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
 
         #endregion
@@ -434,17 +525,14 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnLimpaVidros_Onibus_Click(object sender, EventArgs e)
         {
-            Limpador();
+            Limpador(txtNome_Onibus.Text);
         }
 
         private void btnPagarPedagio_Onibus_Click(object sender, EventArgs e)
         {
-            foreach (var item in ListaVeiculos())
-            {
+            foreach (var item in listaOnibus)
                 if (item.Identificacao == txtNome_Onibus.Text)
-                { }
-
-            }
+                    item.PagaPedagio((Pedagio)cbPedagio_Onibus.SelectedItem);
         }
 
         #endregion
@@ -484,7 +572,7 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnLimpaVidros_Aviao_Click(object sender, EventArgs e)
         {
-            Limpador();
+            Limpador(txtNome_Aviao.Text);
         }
 
         private void btnDecolar_Aviao_Click(object sender, EventArgs e)
@@ -545,7 +633,8 @@ namespace Trabalho_POO_N2.Formulários
         {
             foreach (AviaoDeGuerra v in listaAvioesDeGuerra)
             {
-                v.Ejetar();
+                if (v.Identificacao == txtNome_AviaoGuerra.Text)
+                    v.Ejetar();
             }
         }
 
@@ -601,7 +690,7 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnLimparVidros_Trem_Click(object sender, EventArgs e)
         {
-            Limpador();
+            Limpador(txtNome_Trem.Text);
         }
 
         #endregion
@@ -709,6 +798,7 @@ namespace Trabalho_POO_N2.Formulários
             File.WriteAllText("trens.json", JsonConvert.SerializeObject(listaTrens, Formatting.Indented));
             File.WriteAllText("navios.json", JsonConvert.SerializeObject(listaNavios, Formatting.Indented));
             File.WriteAllText("naviosdeguerra.json", JsonConvert.SerializeObject(listaNaviosDeGuerra, Formatting.Indented));
+            File.WriteAllText("pedagios.json", JsonConvert.SerializeObject(listaPedagio, Formatting.Indented));
 
             ListaVeiculos();
         }
@@ -716,6 +806,35 @@ namespace Trabalho_POO_N2.Formulários
         private void txtVelocidade_Navio_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmCadastroVeiculos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPagarTodosVeiculos_Click(object sender, EventArgs e)
+        {
+            foreach(var item in ListaVeiculos())
+            {
+                if(item is Carro)
+                {
+                    (item as Carro).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                }
+                else if(item is Caminhao)
+                {
+                    (item as Caminhao).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                }
+                else if(item is Moto)
+                {
+                    (item as Moto).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                }
+                else if(item is Onibus)
+                {
+                    (item as Onibus).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                }                
+            }
+            MessageBox.Show("Pedágios pagos!");
         }
     }
 }

@@ -8,32 +8,25 @@ using System.Windows.Forms;
 namespace Trabalho_POO_N2
 {
     public class Pedagio
-    {
-        #region Singleton
-        private static Pedagio instance;
-
-        private Pedagio() { } //para obrigar a usar o singleton
-
-        public static Pedagio GetSingleInstance()
-        {
-            if (instance == null)
-            {
-                instance = new Pedagio();
-            }
-            return instance;
-        }
-        #endregion
+    {      
 
         #region Atributos
         public double ValorTotalAcumulado { get; set; }
-        protected string Identificação { get; set; }
-        protected string Localização { get; set; }
+        public string Identificação { get; set; }
+        public string Localização { get; set; }
         #endregion
 
         #region Metodos
         public void Receber(double valor)
         {
             ValorTotalAcumulado += valor;
+        }
+
+        public override string ToString()
+        {
+            return $"Identificação: {Identificação}"  + Environment.NewLine + 
+                   $"Localização: {Localização}" + Environment.NewLine + 
+                   $"Valor total acumulado: {ValorTotalAcumulado:f2}" + Environment.NewLine;
         }
 
 

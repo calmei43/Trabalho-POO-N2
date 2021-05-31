@@ -129,6 +129,7 @@
             this.Name = "FrmInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seja bem-vindo(a)!";
+            this.Load += new System.EventHandler(this.FrmInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

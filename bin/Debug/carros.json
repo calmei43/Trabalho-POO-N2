@@ -14,7 +14,7 @@
     }
   },
   {
-    "velocidade": 2,
+    "velocidade": 1,
     "QuantidadePortas": 4,
     "Identificacao": "carro1",
     "CapacidadePassageiros": 5,

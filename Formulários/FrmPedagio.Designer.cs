@@ -102,6 +102,7 @@
             this.btnListarPedagios.TabIndex = 76;
             this.btnListarPedagios.Text = "Listar Pedágios";
             this.btnListarPedagios.UseVisualStyleBackColor = true;
+            this.btnListarPedagios.Click += new System.EventHandler(this.btnListarPedagios_Click);
             // 
             // btnCadastro
             // 
@@ -131,6 +132,8 @@
             this.Name = "FrmPedagio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Pedágio";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPedagio_FormClosed);
+            this.Load += new System.EventHandler(this.FrmPedagio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Trabalho_POO_N2
 {
@@ -21,17 +22,14 @@ namespace Trabalho_POO_N2
         {
             velocidade++;
 
-            Console.Write($"{Identificacao} acelerando...");
-            Console.Write($"Velocidade: {velocidade}");
-
+            MessageBox.Show($"{Identificacao} acelerando...");            
         }
 
         public void Desacelera()
         {
             velocidade--;
 
-            Console.Write($"{Identificacao} freando...");
-            Console.Write($"Velocidade: {velocidade}");
+            MessageBox.Show($"{Identificacao} freando...");            
         }
 
         public override string ToString()

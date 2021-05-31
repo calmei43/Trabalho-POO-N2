@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "velocidade": 0,
+    "Identificacao": "navioguerra1",
+    "CapacidadePassageiros": 2000,
+    "Modelo": {
+      "Codigo": 2989,
+      "Descricao": "KA",
+      "Marca": {
+        "Codigo": 789,
+        "Descricao": "FORD"
+      }
+    }
+  }
+]

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Trabalho_POO_N2
 {
@@ -11,7 +12,7 @@ namespace Trabalho_POO_N2
         public const double ValorPedagio = 3;
 
         #region Metodos
-        public void Empinar() => Console.WriteLine("Empinando...");
+        public void Empinar() => MessageBox.Show($"{Identificacao} empinando...");
         public void PagaPedagio(Pedagio pedagio)
         {
             pedagio.Receber(ValorPedagio);

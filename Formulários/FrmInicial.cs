@@ -65,5 +65,10 @@ namespace Trabalho_POO_N2.Formulários
         {
 
         }
+
+        private void FrmInicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
