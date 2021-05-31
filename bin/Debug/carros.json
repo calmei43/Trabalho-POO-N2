@@ -1,29 +1,15 @@
 [
   {
-    "velocidade": 0,
+    "velocidade": 4,
     "QuantidadePortas": 4,
-    "Identificacao": "carro2",
-    "CapacidadePassageiros": 4,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  },
-  {
-    "velocidade": 1,
-    "QuantidadePortas": 4,
-    "Identificacao": "carro1",
+    "Identificacao": "Teste Carro 1",
     "CapacidadePassageiros": 5,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   }

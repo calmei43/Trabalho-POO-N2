@@ -1,17 +1,17 @@
 [
   {
-    "ValorTotalAcumulado": 191.0,
-    "Identificação": "pedagio1",
-    "Localização": "Anchieta Km 31"
+    "ValorTotalAcumulado": 208.5,
+    "Identificação": "1",
+    "Localização": "Anchieta"
   },
   {
-    "ValorTotalAcumulado": 93.5,
-    "Identificação": "pedagio2",
-    "Localização": "Imigrantes Km 16"
+    "ValorTotalAcumulado": 139.0,
+    "Identificação": "2",
+    "Localização": "Rodoanel"
   },
   {
-    "ValorTotalAcumulado": 93.5,
-    "Identificação": "pedagio3",
-    "Localização": "teste"
+    "ValorTotalAcumulado": 69.5,
+    "Identificação": "3",
+    "Localização": "Dutra"
   }
 ]

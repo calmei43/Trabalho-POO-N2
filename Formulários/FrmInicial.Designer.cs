@@ -63,7 +63,7 @@
             // btnCadastrarVeiculo
             // 
             this.btnCadastrarVeiculo.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(148, 156);
+            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(148, 211);
             this.btnCadastrarVeiculo.Name = "btnCadastrarVeiculo";
             this.btnCadastrarVeiculo.Size = new System.Drawing.Size(245, 50);
             this.btnCadastrarVeiculo.TabIndex = 2;
@@ -104,7 +104,7 @@
             // btnCadastraPedagio
             // 
             this.btnCadastraPedagio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastraPedagio.Location = new System.Drawing.Point(148, 211);
+            this.btnCadastraPedagio.Location = new System.Drawing.Point(148, 156);
             this.btnCadastraPedagio.Name = "btnCadastraPedagio";
             this.btnCadastraPedagio.Size = new System.Drawing.Size(245, 49);
             this.btnCadastraPedagio.TabIndex = 6;

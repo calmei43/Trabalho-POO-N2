@@ -204,8 +204,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnEmpinarTodosVeiculos = new System.Windows.Forms.Button();
             this.cbPedagio_TodosVeiculos = new System.Windows.Forms.ComboBox();
+            this.btnAtracarNavios = new System.Windows.Forms.Button();
+            this.btnAtacarTodosVeiculos = new System.Windows.Forms.Button();
+            this.btnLimpadorTodosVeiculos = new System.Windows.Forms.Button();
             this.btnPagarTodosVeiculos = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tpNavioDeGuerra.SuspendLayout();
             this.tpNavio.SuspendLayout();
             this.tpTrem.SuspendLayout();
@@ -217,6 +222,7 @@
             this.tcVeiculo.SuspendLayout();
             this.tpCarro.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpNavioDeGuerra
@@ -2036,33 +2042,90 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Maroon;
-            this.tabPage1.Controls.Add(this.cbPedagio_TodosVeiculos);
-            this.tabPage1.Controls.Add(this.btnPagarTodosVeiculos);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.btnEmpinarTodosVeiculos);
+            this.tabPage1.Controls.Add(this.btnAtracarNavios);
+            this.tabPage1.Controls.Add(this.btnAtacarTodosVeiculos);
+            this.tabPage1.Controls.Add(this.btnLimpadorTodosVeiculos);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(474, 305);
             this.tabPage1.TabIndex = 9;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Ações Gerais";
+            // 
+            // btnEmpinarTodosVeiculos
+            // 
+            this.btnEmpinarTodosVeiculos.Location = new System.Drawing.Point(61, 189);
+            this.btnEmpinarTodosVeiculos.Name = "btnEmpinarTodosVeiculos";
+            this.btnEmpinarTodosVeiculos.Size = new System.Drawing.Size(168, 49);
+            this.btnEmpinarTodosVeiculos.TabIndex = 118;
+            this.btnEmpinarTodosVeiculos.Text = "Empinar todos os Veículos";
+            this.btnEmpinarTodosVeiculos.UseVisualStyleBackColor = true;
+            this.btnEmpinarTodosVeiculos.Click += new System.EventHandler(this.btnEmpinarTodosVeiculos_Click);
             // 
             // cbPedagio_TodosVeiculos
             // 
             this.cbPedagio_TodosVeiculos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPedagio_TodosVeiculos.FormattingEnabled = true;
-            this.cbPedagio_TodosVeiculos.Location = new System.Drawing.Point(237, 106);
+            this.cbPedagio_TodosVeiculos.Location = new System.Drawing.Point(15, 92);
             this.cbPedagio_TodosVeiculos.Name = "cbPedagio_TodosVeiculos";
-            this.cbPedagio_TodosVeiculos.Size = new System.Drawing.Size(124, 21);
-            this.cbPedagio_TodosVeiculos.TabIndex = 113;
+            this.cbPedagio_TodosVeiculos.Size = new System.Drawing.Size(168, 21);
+            this.cbPedagio_TodosVeiculos.TabIndex = 117;
+            // 
+            // btnAtracarNavios
+            // 
+            this.btnAtracarNavios.Location = new System.Drawing.Point(261, 125);
+            this.btnAtracarNavios.Name = "btnAtracarNavios";
+            this.btnAtracarNavios.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAtracarNavios.Size = new System.Drawing.Size(168, 49);
+            this.btnAtracarNavios.TabIndex = 116;
+            this.btnAtracarNavios.Text = "Atracar todos os Navios";
+            this.btnAtracarNavios.UseVisualStyleBackColor = true;
+            this.btnAtracarNavios.Click += new System.EventHandler(this.btnAtracarNavios_Click);
+            // 
+            // btnAtacarTodosVeiculos
+            // 
+            this.btnAtacarTodosVeiculos.Location = new System.Drawing.Point(261, 189);
+            this.btnAtacarTodosVeiculos.Name = "btnAtacarTodosVeiculos";
+            this.btnAtacarTodosVeiculos.Size = new System.Drawing.Size(168, 49);
+            this.btnAtacarTodosVeiculos.TabIndex = 115;
+            this.btnAtacarTodosVeiculos.Text = "Atacar com todos os Veículos";
+            this.btnAtacarTodosVeiculos.UseVisualStyleBackColor = true;
+            this.btnAtacarTodosVeiculos.Click += new System.EventHandler(this.btnAtacarTodosVeiculos_Click);
+            // 
+            // btnLimpadorTodosVeiculos
+            // 
+            this.btnLimpadorTodosVeiculos.Location = new System.Drawing.Point(261, 61);
+            this.btnLimpadorTodosVeiculos.Name = "btnLimpadorTodosVeiculos";
+            this.btnLimpadorTodosVeiculos.Size = new System.Drawing.Size(168, 49);
+            this.btnLimpadorTodosVeiculos.TabIndex = 114;
+            this.btnLimpadorTodosVeiculos.Text = "Acionar Limpador de todos Veículos";
+            this.btnLimpadorTodosVeiculos.UseVisualStyleBackColor = true;
+            this.btnLimpadorTodosVeiculos.Click += new System.EventHandler(this.btnLimpadorTodosVeiculos_Click);
             // 
             // btnPagarTodosVeiculos
             // 
-            this.btnPagarTodosVeiculos.Location = new System.Drawing.Point(66, 91);
+            this.btnPagarTodosVeiculos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPagarTodosVeiculos.Location = new System.Drawing.Point(15, 24);
             this.btnPagarTodosVeiculos.Name = "btnPagarTodosVeiculos";
-            this.btnPagarTodosVeiculos.Size = new System.Drawing.Size(106, 49);
+            this.btnPagarTodosVeiculos.Size = new System.Drawing.Size(168, 49);
             this.btnPagarTodosVeiculos.TabIndex = 0;
-            this.btnPagarTodosVeiculos.Text = "Pagar pedagio de todos veiculos";
+            this.btnPagarTodosVeiculos.Text = "Pagar pedagio de todos Veículos";
             this.btnPagarTodosVeiculos.UseVisualStyleBackColor = true;
             this.btnPagarTodosVeiculos.Click += new System.EventHandler(this.btnPagarTodosVeiculos_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnPagarTodosVeiculos);
+            this.groupBox1.Controls.Add(this.cbPedagio_TodosVeiculos);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Location = new System.Drawing.Point(46, 61);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 122);
+            this.groupBox1.TabIndex = 119;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Pedágio";
             // 
             // FrmCadastroVeiculos
             // 
@@ -2096,6 +2159,7 @@
             this.tpCarro.ResumeLayout(false);
             this.tpCarro.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2249,7 +2313,6 @@
         private System.Windows.Forms.TabControl tcVeiculo;
         private System.Windows.Forms.TabPage tpCarro;
         private System.Windows.Forms.ComboBox cbMarca_Carro;
-        private System.Windows.Forms.ComboBox cbModelo_Carro;
         private System.Windows.Forms.Button btnCadastrar_Carro;
         private System.Windows.Forms.Button btnLimparVidros_Carro;
         private System.Windows.Forms.Button btnPagarPedagio_Carro;
@@ -2276,7 +2339,13 @@
         private System.Windows.Forms.ComboBox cbPedagio_Onibus;
         private System.Windows.Forms.ComboBox cbPedagio_Moto;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ComboBox cbPedagio_TodosVeiculos;
+        private System.Windows.Forms.Button btnAtracarNavios;
+        private System.Windows.Forms.Button btnAtacarTodosVeiculos;
+        private System.Windows.Forms.Button btnLimpadorTodosVeiculos;
         private System.Windows.Forms.Button btnPagarTodosVeiculos;
+        private System.Windows.Forms.ComboBox cbModelo_Carro;
+        private System.Windows.Forms.ComboBox cbPedagio_TodosVeiculos;
+        private System.Windows.Forms.Button btnEmpinarTodosVeiculos;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

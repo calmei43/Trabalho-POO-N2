@@ -1,17 +1,33 @@
 [
   {
-    "velocidade": 4,
-    "PesoCarregado": 100.0,
-    "QuantidadeEixos": 8,
+    "velocidade": 2,
+    "PesoCarregado": 0.0,
+    "QuantidadeEixos": 6,
     "CapacidadeMaxima": 1000.0,
-    "Identificacao": "caminhao1",
-    "CapacidadePassageiros": 4,
+    "Identificacao": "Teste Caminhão 1",
+    "CapacidadePassageiros": 3,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
+      }
+    }
+  },
+  {
+    "velocidade": 3,
+    "PesoCarregado": 100.0,
+    "QuantidadeEixos": 4,
+    "CapacidadeMaxima": 200.0,
+    "Identificacao": "Teste caminhão 2",
+    "CapacidadePassageiros": 2,
+    "Modelo": {
+      "Codigo": 2,
+      "Descricao": "Modelo 2",
+      "Marca": {
+        "Codigo": 2,
+        "Descricao": "Marca 2"
       }
     }
   }

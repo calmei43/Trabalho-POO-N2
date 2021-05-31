@@ -25,10 +25,11 @@ namespace Trabalho_POO_N2.Formulários
 
         #endregion
 
-        #region Listas 
-        public List<Modelo> listaModelo = new List<Modelo>();
-        public List<Marca> listaMarca = new List<Marca>();
+        #region Dicionarios 
+        public Dictionary<int, Modelo> dicModelo = new Dictionary<int, Modelo>();
+        public Dictionary<int, Marca> dicMarca = new Dictionary<int, Marca>();
         #endregion
+
         public FrmCadastroModeloMarca()
         {
             InitializeComponent();
@@ -41,16 +42,26 @@ namespace Trabalho_POO_N2.Formulários
         {
             try
             {
-                Marca marca = new Marca();
+                if(dicMarca.ContainsKey(Convert.ToInt16(txtCodigo_Marca.Text)))
+                {
+                    dicMarca[Convert.ToInt16(txtCodigo_Marca.Text)].Descricao = txtDescricao_Marca.Text;
 
-                marca.Codigo = Convert.ToInt16(txtCodigo_Marca.Text);
-                marca.Descricao = txtDescricao_Marca.Text;
+                    MessageBox.Show("Marca alterada com sucesso!");
+                }
+                else
+                {
+                    Marca marca = new Marca();
+                    marca.Codigo = dicMarca.Count + 1;
+                    marca.Descricao = txtDescricao_Marca.Text;
+                    dicMarca.Add(marca.Codigo, marca);
 
-                listaMarca.Add(marca);
-                cbMarca_Modelo.Items.Add(marca); //adicionar as marcas na combobox do modelo
+                    cbMarca_Modelo.DisplayMember = "Descricao";
+                    cbMarca_Modelo.Items.Add(marca); //adicionar as marcas na combobox do modelo
 
-                cbMarca_Modelo.DisplayMember = "Descricao";
-                MessageBox.Show("Marca cadastrada com sucesso!");
+                    MessageBox.Show("Marca cadastrada com sucesso!");
+                }
+
+                SalvarMarca();
             }
             catch (Exception erro)
             {
@@ -60,10 +71,8 @@ namespace Trabalho_POO_N2.Formulários
 
         void SalvarMarca()
         {
-            File.WriteAllText("marcas.json", JsonConvert.SerializeObject(listaMarca, Formatting.Indented));
+            File.WriteAllText("marcas.json", JsonConvert.SerializeObject(RetoraListaComValues(dicMarca), Formatting.Indented));
         }
-
-
         #endregion
 
         #region Modelo
@@ -71,12 +80,21 @@ namespace Trabalho_POO_N2.Formulários
         {
             try
             {
-                Modelo modelo = new Modelo(Convert.ToInt16(txtCodigo_Modelo.Text), txtDescricao_Modelo.Text, (Marca)cbMarca_Modelo.SelectedItem);
+                if (dicModelo.ContainsKey(Convert.ToInt16(txtCodigo_Modelo.Text)))
+                {
+                    dicModelo[Convert.ToInt16(txtCodigo_Modelo.Text)].Descricao = txtDescricao_Modelo.Text;
 
-                listaModelo.Add(modelo);
-                SalvarMarca();
+                    MessageBox.Show("Modelo alterada com sucesso!");
+                }
+                else
+                {
+                    Modelo modelo = new Modelo(dicModelo.Count + 1, txtDescricao_Modelo.Text, (Marca)cbMarca_Modelo.SelectedItem);
+                    dicModelo.Add(modelo.Codigo, modelo);
+
+                    MessageBox.Show("Modelo cadastrada com sucesso!");
+                }
+
                 SalvarModelo();
-                MessageBox.Show("Modelo cadastrado com sucesso!");
             }
             catch (Exception erro)
             {
@@ -87,7 +105,7 @@ namespace Trabalho_POO_N2.Formulários
 
         void SalvarModelo()
         {
-            File.WriteAllText("modelos.json", JsonConvert.SerializeObject(listaModelo, Formatting.Indented));
+            File.WriteAllText("modelos.json", JsonConvert.SerializeObject(RetoraListaComValues(dicModelo), Formatting.Indented));
         }
 
         public void SetCurrentForm(Form currentForm)
@@ -97,5 +115,28 @@ namespace Trabalho_POO_N2.Formulários
 
         #endregion
 
+        List<Modelo> RetoraListaComValues(Dictionary<int, Modelo> dicModelo)
+        {
+            List<Modelo> modelos = new List<Modelo>();
+
+            foreach (var item in dicModelo.Values)
+            {
+                modelos.Add(item);
+            }
+
+            return modelos;
+        }
+
+        List<Marca> RetoraListaComValues(Dictionary<int, Marca> dicMarca)
+        {
+            List<Marca> marcas = new List<Marca>();
+
+            foreach (var item in dicMarca.Values)
+            {
+                marcas.Add(item);
+            }
+
+            return marcas;
+        }
     }
 }

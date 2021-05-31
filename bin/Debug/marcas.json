@@ -1,6 +1,10 @@
 [
   {
-    "Codigo": 789,
-    "Descricao": "FORD"
+    "Codigo": 1,
+    "Descricao": "Marca 1"
+  },
+  {
+    "Codigo": 2,
+    "Descricao": "Marca 2"
   }
 ]

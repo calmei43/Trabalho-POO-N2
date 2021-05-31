@@ -1,123 +1,112 @@
 [
   {
-    "velocidade": 1,
-    "Identificacao": "aviao1",
+    "velocidade": 2,
+    "Identificacao": "Teste Avião 1",
     "CapacidadePassageiros": 100,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   },
   {
     "velocidade": 0,
-    "Identificacao": "aviao1",
-    "CapacidadePassageiros": 128,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  },
-  {
-    "velocidade": 0,
-    "Identificacao": "aviaoguerra1",
+    "Identificacao": "Teste Avião de Guerra 1",
     "CapacidadePassageiros": 2,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
+      }
+    }
+  },
+  {
+    "velocidade": 2,
+    "PesoCarregado": 0.0,
+    "QuantidadeEixos": 6,
+    "CapacidadeMaxima": 1000.0,
+    "Identificacao": "Teste Caminhão 1",
+    "CapacidadePassageiros": 3,
+    "Modelo": {
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
+      "Marca": {
+        "Codigo": 1,
+        "Descricao": "Marca 1"
+      }
+    }
+  },
+  {
+    "velocidade": 3,
+    "PesoCarregado": 100.0,
+    "QuantidadeEixos": 4,
+    "CapacidadeMaxima": 200.0,
+    "Identificacao": "Teste caminhão 2",
+    "CapacidadePassageiros": 2,
+    "Modelo": {
+      "Codigo": 2,
+      "Descricao": "Modelo 2",
+      "Marca": {
+        "Codigo": 2,
+        "Descricao": "Marca 2"
       }
     }
   },
   {
     "velocidade": 4,
-    "PesoCarregado": 100.0,
-    "QuantidadeEixos": 8,
-    "CapacidadeMaxima": 1000.0,
-    "Identificacao": "caminhao1",
-    "CapacidadePassageiros": 4,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  },
-  {
-    "velocidade": 0,
     "QuantidadePortas": 4,
-    "Identificacao": "carro2",
-    "CapacidadePassageiros": 4,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  },
-  {
-    "velocidade": 1,
-    "QuantidadePortas": 4,
-    "Identificacao": "carro1",
+    "Identificacao": "Teste Carro 1",
     "CapacidadePassageiros": 5,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  },
-  {
-    "velocidade": 0,
-    "Identificacao": "moto1",
-    "CapacidadePassageiros": 3,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   },
   {
     "velocidade": 1,
-    "Identificacao": "navio1",
-    "CapacidadePassageiros": 2555,
+    "Identificacao": "Teste Moto 1",
+    "CapacidadePassageiros": 2,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   },
   {
     "velocidade": 0,
-    "Identificacao": "navioguerra1",
-    "CapacidadePassageiros": 2000,
+    "Identificacao": "Teste Navio 1",
+    "CapacidadePassageiros": 1000,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
+      }
+    }
+  },
+  {
+    "velocidade": 0,
+    "Identificacao": "Teste Navios de Guerra 1",
+    "CapacidadePassageiros": 40,
+    "Modelo": {
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
+      "Marca": {
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   },
@@ -125,28 +114,28 @@
     "velocidade": 0,
     "QuantidadeEixos": 4,
     "Leito": true,
-    "Identificacao": "onibus1",
-    "CapacidadePassageiros": 32,
+    "Identificacao": "Teste Ônibus 1",
+    "CapacidadePassageiros": 40,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   },
   {
-    "velocidade": 1,
-    "QuantidadeVagões": 12,
-    "Identificacao": "trem1",
-    "CapacidadePassageiros": 224,
+    "velocidade": 0,
+    "QuantidadeVagões": 4,
+    "Identificacao": "Teste Trem 1",
+    "CapacidadePassageiros": 100,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   }

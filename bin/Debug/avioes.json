@@ -1,27 +1,14 @@
 [
   {
-    "velocidade": 1,
-    "Identificacao": "aviao1",
+    "velocidade": 2,
+    "Identificacao": "Teste Avião 1",
     "CapacidadePassageiros": 100,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
-      }
-    }
-  },
-  {
-    "velocidade": 0,
-    "Identificacao": "aviao1",
-    "CapacidadePassageiros": 128,
-    "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
-      "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   }

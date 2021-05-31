@@ -1,10 +1,18 @@
 [
   {
-    "Codigo": 2989,
-    "Descricao": "KA",
+    "Codigo": 1,
+    "Descricao": "Modelo 1",
     "Marca": {
-      "Codigo": 789,
-      "Descricao": "FORD"
+      "Codigo": 1,
+      "Descricao": "Marca 1"
+    }
+  },
+  {
+    "Codigo": 2,
+    "Descricao": "Modelo 2",
+    "Marca": {
+      "Codigo": 2,
+      "Descricao": "Marca 2"
     }
   }
 ]

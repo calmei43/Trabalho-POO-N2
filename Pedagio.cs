@@ -8,8 +8,7 @@ using System.Windows.Forms;
 namespace Trabalho_POO_N2
 {
     public class Pedagio
-    {      
-
+    {     
         #region Atributos
         public double ValorTotalAcumulado { get; set; }
         public string Identificação { get; set; }

@@ -44,7 +44,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(21, 104);
+            this.label41.Location = new System.Drawing.Point(23, 142);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(91, 19);
             this.label41.TabIndex = 67;
@@ -52,14 +52,14 @@
             // 
             // txtIdentificacao_Pedagio
             // 
-            this.txtIdentificacao_Pedagio.Location = new System.Drawing.Point(129, 103);
+            this.txtIdentificacao_Pedagio.Location = new System.Drawing.Point(131, 141);
             this.txtIdentificacao_Pedagio.Name = "txtIdentificacao_Pedagio";
             this.txtIdentificacao_Pedagio.Size = new System.Drawing.Size(100, 20);
             this.txtIdentificacao_Pedagio.TabIndex = 68;
             // 
             // txtLocalizacao_Pedagio
             // 
-            this.txtLocalizacao_Pedagio.Location = new System.Drawing.Point(129, 137);
+            this.txtLocalizacao_Pedagio.Location = new System.Drawing.Point(131, 175);
             this.txtLocalizacao_Pedagio.Name = "txtLocalizacao_Pedagio";
             this.txtLocalizacao_Pedagio.Size = new System.Drawing.Size(100, 20);
             this.txtLocalizacao_Pedagio.TabIndex = 70;
@@ -68,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 138);
+            this.label1.Location = new System.Drawing.Point(23, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 19);
             this.label1.TabIndex = 69;
@@ -77,7 +77,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Trabalho_POO_N2.Properties.Resources.cashier2_117800;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(94, 50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,7 +106,7 @@
             // 
             // btnCadastro
             // 
-            this.btnCadastro.Location = new System.Drawing.Point(67, 193);
+            this.btnCadastro.Location = new System.Drawing.Point(69, 231);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(98, 26);
             this.btnCadastro.TabIndex = 78;

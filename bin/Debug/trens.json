@@ -1,15 +1,15 @@
 [
   {
-    "velocidade": 1,
-    "QuantidadeVagões": 12,
-    "Identificacao": "trem1",
-    "CapacidadePassageiros": 224,
+    "velocidade": 0,
+    "QuantidadeVagões": 4,
+    "Identificacao": "Teste Trem 1",
+    "CapacidadePassageiros": 100,
     "Modelo": {
-      "Codigo": 2989,
-      "Descricao": "KA",
+      "Codigo": 1,
+      "Descricao": "Modelo 1",
       "Marca": {
-        "Codigo": 789,
-        "Descricao": "FORD"
+        "Codigo": 1,
+        "Descricao": "Marca 1"
       }
     }
   }

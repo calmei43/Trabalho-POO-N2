@@ -28,10 +28,12 @@ namespace Trabalho_POO_N2
         /// <param name="peso"></param>
         public void Carregar(double peso)
         {
-            PesoCarregado += peso;
+            if (VerificaCapacidadeMaxima())
+            {
+                PesoCarregado += peso;
 
-            MessageBox.Show($"{Identificacao} carregando...");
-
+                MessageBox.Show($"{Identificacao} carregando...");
+            }
         }
 
         /// <summary>
@@ -46,14 +48,14 @@ namespace Trabalho_POO_N2
         /// <summary>
         /// Se ultrapassada, o veículo não deve acelerar.Neste caso, gere uma exceção indicando.
         /// </summary>
-        public void VerificaCapacidadeMaxima()
+        public bool VerificaCapacidadeMaxima()
         {
-
             if (PesoCarregado > CapacidadeMaxima)
             {
                 throw new CapacidadeMaximaExcedidaException(CapacidadeMaxima - PesoCarregado);
             }
 
+            return true;
         }
         public void Limpador() => MessageBox.Show($"Limpador do Caminhao {Identificacao} Ativado/Desativado...");
 

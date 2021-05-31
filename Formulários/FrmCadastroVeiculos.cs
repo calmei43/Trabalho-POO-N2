@@ -33,17 +33,21 @@ namespace Trabalho_POO_N2.Formulários
 
             CarregaMarcas();
             CarregaModelos();
-            CarregaVeiculos();
-            CarregaPedagios();
 
-            PreencheArrayComboBoxMarca();
-            PreencheArrayComboBoxModelo();
-            PreencheArrayComboBoxPedagio();
+            if(VerificaSeMarcaEModeloForamCadastrados())
+            { 
+                CarregaVeiculos();
+                CarregaPedagios();
+
+                PreencheArrayComboBoxMarca();
+                PreencheArrayComboBoxModelo();
+                PreencheArrayComboBoxPedagio();
+            }
         }
 
         #region Listas
-        List<Marca> listaMarcas = new List<Marca>();
-        List<Modelo> listaModelos = new List<Modelo>();
+        public List<Modelo> listaModelo = new List<Modelo>();
+        public List<Marca> listaMarca = new List<Marca>();
 
         List<Aviao> listaAvioes = new List<Aviao>();
         List<AviaoDeGuerra> listaAvioesDeGuerra = new List<AviaoDeGuerra>();
@@ -245,11 +249,12 @@ namespace Trabalho_POO_N2.Formulários
         #region Metodos Carrega Modelo/Marca/Veiculos/Pedagios Combobox
         void CarregaMarcas()
         {
-            listaMarcas = JsonConvert.DeserializeObject<List<Marca>>(File.ReadAllText("marcas.json"));
+            listaMarca = JsonConvert.DeserializeObject<List<Marca>>(File.ReadAllText("marcas.json"));
         }
+
         void CarregaModelos()
         {
-            listaModelos = JsonConvert.DeserializeObject<List<Modelo>>(File.ReadAllText("modelos.json"));
+            listaModelo = JsonConvert.DeserializeObject<List<Modelo>>(File.ReadAllText("modelos.json"));       
         }
 
         void CarregaVeiculos()
@@ -278,7 +283,7 @@ namespace Trabalho_POO_N2.Formulários
 
             foreach (var cb in arrayCbMarca)
             {
-                foreach (var item in listaMarcas)
+                foreach (var item in listaMarca)
                 {
                     cb.Items.Add(item);
                     cb.DisplayMember = "Descricao";
@@ -286,6 +291,7 @@ namespace Trabalho_POO_N2.Formulários
                 cb.SelectedIndex = 0;
             }
         }
+
         void PreencheArrayComboBoxModelo()
         {
             ComboBox[] arrayCbModelo = {cbModelo_Carro, cbModelo_Moto, cbModelo_Navio, cbModelo_NavioGuerra, cbModelo_Onibus,
@@ -293,7 +299,7 @@ namespace Trabalho_POO_N2.Formulários
 
             foreach (var cb in arrayCbModelo)
             {
-                foreach (var item in listaModelos)
+                foreach (var item in listaModelo)
                 {
                     cb.Items.Add(item);
                     cb.DisplayMember = "Descricao";
@@ -306,15 +312,23 @@ namespace Trabalho_POO_N2.Formulários
         {
             ComboBox[] arrayCbPedagio = {cbPedagio_Carro, cbPedagio_Moto, cbPedagio_Onibus, cbPedagio_Caminhao, cbPedagio_TodosVeiculos};
 
-            foreach (var cb in arrayCbPedagio)
+            try
             {
-                foreach (var item in listaPedagio)
+                foreach (var cb in arrayCbPedagio)
                 {
-                    cb.Items.Add(item);
-                    cb.DisplayMember = "Identificação";                    
+                    foreach (var item in listaPedagio)
+                    {
+                        cb.Items.Add(item);
+                        cb.DisplayMember = "Localização";                    
+                    }
+                    cb.SelectedIndex = 0;
                 }
-                cb.SelectedIndex = 0;
             }
+            catch
+            {
+                MessageBox.Show("Nenhum Pedágio Encontrado. Cadastre pelo menos um e tente novamente!");
+            }
+            
         }
 
         #endregion
@@ -356,6 +370,8 @@ namespace Trabalho_POO_N2.Formulários
             foreach (var item in listaCarros)
                 if (item.Identificacao == txtNome_Carro.Text)
                     item.PagaPedagio((Pedagio)cbPedagio_Carro.SelectedItem);
+
+            MessageBox.Show("Pedágio pago!");
         }
 
         private void btnLimparVidros_Carro_Click(object sender, EventArgs e)
@@ -406,6 +422,8 @@ namespace Trabalho_POO_N2.Formulários
             foreach (var item in listaCaminhoes)
                 if (item.Identificacao == txtNome_Caminhao.Text)
                     item.PagaPedagio((Pedagio)cbPedagio_Caminhao.SelectedItem);
+
+            MessageBox.Show("Pedágio pago!");
         }
 
         private void btnLimparVidros_Caminhao_Click(object sender, EventArgs e)
@@ -415,19 +433,38 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnCarregar_Caminhao_Click(object sender, EventArgs e)
         {
-            foreach (Caminhao v in listaCaminhoes)
+            try
             {
-                v.Carregar(Convert.ToInt16(txtPesoCarregado_Caminhao.Text));
-
+                foreach (Caminhao v in listaCaminhoes)
+                {
+                    if(v.Identificacao == txtNome_Caminhao.Text)
+                    {
+                        v.Carregar(Double.Parse(txtPesoCarregado_Caminhao.Text));
+                    }
+                }
             }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+            
         }
 
         private void btnDescarregar_Caminhao_Click(object sender, EventArgs e)
         {
-            foreach (Caminhao v in listaCaminhoes)
+            try
             {
-                v.Descarregar();
-
+                foreach (Caminhao v in listaCaminhoes)
+                {
+                    if (v.Identificacao == txtNome_Caminhao.Text)
+                    {
+                        v.Descarregar();
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
             }
         }
 
@@ -470,6 +507,8 @@ namespace Trabalho_POO_N2.Formulários
             foreach (var item in listaMotos)
                 if (item.Identificacao == txtNome_Moto.Text)
                     item.PagaPedagio((Pedagio)cbPedagio_Moto.SelectedItem);
+
+            MessageBox.Show("Pedágio pago!");
         }
 
         private void btnEmpinar_Moto_Click(object sender, EventArgs e)
@@ -533,6 +572,8 @@ namespace Trabalho_POO_N2.Formulários
             foreach (var item in listaOnibus)
                 if (item.Identificacao == txtNome_Onibus.Text)
                     item.PagaPedagio((Pedagio)cbPedagio_Onibus.SelectedItem);
+
+            MessageBox.Show("Pedágio pago!");
         }
 
         #endregion
@@ -733,7 +774,6 @@ namespace Trabalho_POO_N2.Formulários
             Atracar(txtNome_Navio.Text);
         }
 
-
         #endregion
 
         #region Navio de Guerra
@@ -785,7 +825,6 @@ namespace Trabalho_POO_N2.Formulários
             FormController.CurrentForm = currentForm;
         }
        
-
         private void FrmCadastroVeiculos_FormClosed(object sender, FormClosedEventArgs e)
         {
 
@@ -810,31 +849,130 @@ namespace Trabalho_POO_N2.Formulários
 
         private void FrmCadastroVeiculos_Load(object sender, EventArgs e)
         {
+            if (!VerificaSeMarcaEModeloForamCadastrados())
+                Close();
+        }
 
+        private bool VerificaSeMarcaEModeloForamCadastrados()
+        {
+            bool verify = true;
+
+            if (listaModelo == null || listaModelo.Count == 0 )
+            {
+                MessageBox.Show("Nenhum modelo encontrado. Realize o cadastro de pelo menos um e tente novamente.");
+                verify = false;
+            }               
+            else if (listaMarca == null || listaMarca.Count == 0  )
+            {
+                MessageBox.Show("Nenhuma marca encontrada. Realize o cadastro de pelo menos uma e tente novamente.");
+                verify = false;
+            }
+
+            return verify;    
         }
 
         private void btnPagarTodosVeiculos_Click(object sender, EventArgs e)
         {
+            string aux = "Veículos que Realizaram a ação:";
             foreach(var item in ListaVeiculos())
             {
                 if(item is Carro)
                 {
                     (item as Carro).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                    aux += "\n" + (item as Carro).Identificacao + ";";
                 }
                 else if(item is Caminhao)
                 {
                     (item as Caminhao).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                    aux += "\n" + (item as Caminhao).Identificacao + ";";
                 }
                 else if(item is Moto)
                 {
                     (item as Moto).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                    aux += "\n" + (item as Moto).Identificacao + ";";
                 }
                 else if(item is Onibus)
                 {
                     (item as Onibus).PagaPedagio((Pedagio)cbPedagio_TodosVeiculos.SelectedItem);
+                    aux += "\n" + (item as Onibus).Identificacao + ";";
                 }                
             }
-            MessageBox.Show("Pedágios pagos!");
+            MessageBox.Show("Pedágios pagos! \n\n" + aux);
+        }
+
+        private void btnLimpadorTodosVeiculos_Click(object sender, EventArgs e)
+        {
+
+            foreach (var item in ListaVeiculos())
+            {
+                if (item is Carro)
+                {
+                    (item as Carro).Limpador();
+                }
+                else if (item is Caminhao)
+                {
+                    (item as Caminhao).Limpador();
+                }
+                else if (item is Aviao)
+                {
+                    (item as Aviao).Limpador();
+                }
+                else if (item is Aviao)
+                {
+                    (item as Onibus).Limpador();
+                }
+                else if (item is Onibus)
+                {
+                    (item as Onibus).Limpador();
+                }
+            }
+
+            MessageBox.Show("Vidros Limpos!");
+        }
+
+        private void btnAtracarNavios_Click(object sender, EventArgs e)
+        {
+
+            foreach (var item in ListaVeiculos())
+            {
+                if (item is Navio)
+                {
+                    (item as Navio).Atracar();
+                }
+                else if (item is NavioGuerra)
+                {
+                    (item as NavioGuerra).Atracar();
+                }
+            }
+            MessageBox.Show("Navios Atracados!");
+        }
+
+        private void btnAtacarTodosVeiculos_Click(object sender, EventArgs e)
+        {
+            foreach (var item in ListaVeiculos())
+            {
+                if (item is AviaoDeGuerra)
+                {
+                    (item as AviaoDeGuerra).Atacar();
+                }
+                else if (item is NavioGuerra)
+                {
+                    (item as NavioGuerra).Atacar();
+                }
+            }
+            MessageBox.Show("Ataque Realizado com sucesso!");
+        }
+
+        private void btnEmpinarTodosVeiculos_Click(object sender, EventArgs e)
+        {
+            foreach (var item in ListaVeiculos())
+            {
+                if (item is Moto)
+                {
+                    (item as Moto).Empinar();
+                }
+            }
+            MessageBox.Show("Veículos Empinados!");
         }
     }
 }
