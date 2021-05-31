@@ -1,6 +1,6 @@
 [
   {
-    "velocidade": 3,
+    "velocidade": 0,
     "QuantidadePortas": 4,
     "Identificacao": "carro2",
     "CapacidadePassageiros": 4,
@@ -14,7 +14,7 @@
     }
   },
   {
-    "velocidade": 3,
+    "velocidade": 2,
     "QuantidadePortas": 4,
     "Identificacao": "carro1",
     "CapacidadePassageiros": 5,

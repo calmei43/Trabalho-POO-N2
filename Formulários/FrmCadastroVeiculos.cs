@@ -74,19 +74,29 @@ namespace Trabalho_POO_N2.Formulários
         #endregion
 
         #region Métodos Ações
-        void Acelera()
+        void Acelera(string identificacao, Control textBox)
         {
             foreach (var item in ListaVeiculos())
             {
-                item.Acelera();
+                if (item.Identificacao == identificacao)
+                {
+                    item.Acelera();
+                    (textBox as TextBox).Text = item.velocidade.ToString();
+                    break;
+                }
             }
+
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void Desacelera()
+        void Desacelera(string identificacao, Control textBox)
         {
             foreach (var item in ListaVeiculos())
             {
                 item.Desacelera();
+                (textBox as TextBox).Text = item.velocidade.ToString();
+                break;
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
         void Limpador()
         {
@@ -96,54 +106,67 @@ namespace Trabalho_POO_N2.Formulários
                     (item as ILimpador).Limpador();
             }
         }
-        void Atacar()
+        void Atacar(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
                 if (item is IAtacar)
+                {
                     (item as IAtacar).Atacar();
+                    break;
+                }
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void Atracar()
+        void Atracar(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
                 if (item is IAtracar)
+                {
                     (item as IAtracar).Atracar();
+                    break;
+                }
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void Pousar()
+        void Pousar(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
                 if (item is IAviao)
+                {
                     (item as IAviao).Pousar();
+                    break;
+                }
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void Arremeter()
+        void Arremeter(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
                 if (item is IAviao)
+                {
                     (item as IAviao).Arremeter();
+                    break;
+                }
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void Decolar()
+        void Decolar(string identificacao)
         {
             foreach (var item in ListaVeiculos())
             {
                 if (item is IAviao)
+                {
                     (item as IAviao).Decolar();
+                    break;
+                }
             }
+            MessageBox.Show("Não tem veículo salvo com este nome!");
         }
-        void PagaPedagio()
-        {
-            foreach (var item in ListaVeiculos())
-            {
-                if (item is IPedagio)
-                    (item as IPedagio).PagaPedagio();
-            }
-        }
+       
         #endregion
 
         #region Metodos Carrega Modelo/Marca/Veiculos Combobox
@@ -226,16 +249,21 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Carro_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Carro.Text, txtVelocidade_Carro);                    
         }
         private void btn_Desacelerar_Carro_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Carro.Text, txtVelocidade_Carro);
         }
 
         private void btnPagarPedagio_Carro_Click(object sender, EventArgs e)
         {
-            PagaPedagio();
+            foreach(var item in ListaVeiculos())
+            {
+                if (item.Identificacao == txtNome_Carro.Text)
+                { }
+                    
+            }
         }
 
         private void btnLimparVidros_Carro_Click(object sender, EventArgs e)
@@ -273,17 +301,22 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Caminhao_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Caminhao.Text, txtVelocidade_Caminhao);
         }
 
         private void btnDesacelerar_Caminhao_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Caminhao.Text, txtVelocidade_Caminhao);
         }
 
         private void btnPagarPedagio_Caminhao_Click(object sender, EventArgs e)
         {
-            PagaPedagio();
+            foreach (var item in ListaVeiculos())
+            {
+                if (item.Identificacao == txtNome_Caminhao.Text)
+                { }
+                    
+            }
         }
 
         private void btnLimparVidros_Caminhao_Click(object sender, EventArgs e)
@@ -335,17 +368,22 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Moto_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Moto.Text, txtVelocidade_Moto);
         }
 
         private void btnDesacelerar_Moto_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Moto.Text, txtVelocidade_Moto);
         }
 
         private void btnPagarPedagio_Moto_Click(object sender, EventArgs e)
         {
-            PagaPedagio();
+            foreach (var item in ListaVeiculos())
+            {
+                if (item.Identificacao == txtNome_Moto.Text)
+                { }
+
+            }
         }
 
         private void btnEmpinar_Moto_Click(object sender, EventArgs e)
@@ -386,12 +424,12 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Onibus_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Onibus.Text, txtVelocidade_Onibus);
         }
 
         private void btnDesacelerar_Onibus_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Onibus.Text, txtVelocidade_Onibus);
         }
 
         private void btnLimpaVidros_Onibus_Click(object sender, EventArgs e)
@@ -401,7 +439,12 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnPagarPedagio_Onibus_Click(object sender, EventArgs e)
         {
-            PagaPedagio();
+            foreach (var item in ListaVeiculos())
+            {
+                if (item.Identificacao == txtNome_Onibus.Text)
+                { }
+
+            }
         }
 
         #endregion
@@ -431,12 +474,12 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Aviao_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Aviao.Text, txtVelocidade_Aviao);
         }
 
         private void btnDesacelerar_Aviao_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Aviao.Text, txtVelocidade_Aviao);
         }
 
         private void btnLimpaVidros_Aviao_Click(object sender, EventArgs e)
@@ -446,17 +489,17 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnDecolar_Aviao_Click(object sender, EventArgs e)
         {
-            Decolar();
+            Decolar(txtNome_Aviao.Text);
         }
 
         private void btnArremeter_Aviao_Click(object sender, EventArgs e)
         {
-            Arremeter();
+            Arremeter(txtNome_Aviao.Text);
         }
 
         private void btnPousar_Aviao_Click(object sender, EventArgs e)
         {
-            Pousar();
+            Pousar(txtNome_Aviao.Text);
         }
         #endregion
 
@@ -485,17 +528,17 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_AviaoGuerra_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_AviaoGuerra.Text, txtVelocidade_AviaoGuerra);
         }
 
         private void btnDesacelerar_AviaoGuerra_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_AviaoGuerra.Text, txtVelocidade_AviaoGuerra);
         }
 
         private void btnAtacar_AviaoGuerra_Click(object sender, EventArgs e)
         {
-            Atacar();
+            Atacar(txtNome_AviaoGuerra.Text);
         }
 
         private void btnEjetar_AviaoGuerra_Click(object sender, EventArgs e)
@@ -508,17 +551,17 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnDecolar_AviaoGuerra_Click(object sender, EventArgs e)
         {
-            Decolar();
+            Decolar(txtNome_AviaoGuerra.Text);
         }
 
         private void btnArremeter_AviaoGuerra_Click(object sender, EventArgs e)
         {
-            Arremeter();
+            Arremeter(txtNome_AviaoGuerra.Text);
         }
 
         private void btnPousar_AviaoGuerra_Click(object sender, EventArgs e)
         {
-            Pousar();
+            Pousar(txtNome_AviaoGuerra.Text);
         }
         #endregion
 
@@ -548,12 +591,12 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Trem_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Trem.Text, txtVelocidade_Trem);
         }
 
         private void btnDesacelerar_Trem_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Trem.Text, txtVelocidade_Trem);
         }
 
         private void btnLimparVidros_Trem_Click(object sender, EventArgs e)
@@ -588,17 +631,17 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_Navio_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_Navio.Text, txtVelocidade_Navio);
         }
 
         private void btnDesacelerar_Navio_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_Navio.Text, txtVelocidade_Navio);
         }
 
         private void btnAtracar_Navio_Click(object sender, EventArgs e)
         {
-            Atracar();
+            Atracar(txtNome_Navio.Text);
         }
 
 
@@ -629,22 +672,22 @@ namespace Trabalho_POO_N2.Formulários
 
         private void btnAcelerar_NavioGuerra_Click(object sender, EventArgs e)
         {
-            Acelera();
+            Acelera(txtNome_NavioGuerra.Text, txtVelocidade_NavioGuerra);
         }
 
         private void btnDesacelerar_NavioGuerra_Click(object sender, EventArgs e)
         {
-            Desacelera();
+            Desacelera(txtNome_NavioGuerra.Text, txtVelocidade_NavioGuerra);
         }
 
         private void btnAtracar_NavioGuerra_Click(object sender, EventArgs e)
         {
-            Atracar();
+            Atracar(txtNome_NavioGuerra.Text);
         }
 
         private void btnAtacar_NavioGuerra_Click(object sender, EventArgs e)
         {
-            Atacar();
+            Atacar(txtNome_NavioGuerra.Text);
         }
         #endregion
 
@@ -668,6 +711,11 @@ namespace Trabalho_POO_N2.Formulários
             File.WriteAllText("naviosdeguerra.json", JsonConvert.SerializeObject(listaNaviosDeGuerra, Formatting.Indented));
 
             ListaVeiculos();
+        }
+
+        private void txtVelocidade_Navio_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

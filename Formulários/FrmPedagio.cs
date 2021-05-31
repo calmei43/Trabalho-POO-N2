@@ -17,6 +17,9 @@ namespace Trabalho_POO_N2.Formulários
             InitializeComponent();
         }
 
-
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            Pedagio p = new Pedagio();
+        }
     }
 }

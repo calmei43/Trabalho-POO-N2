@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Trabalho_POO_N2
 {
@@ -30,12 +31,12 @@ namespace Trabalho_POO_N2
         #endregion
 
         #region Metodos
-        public void Receber()
+        public void Receber(double valor)
         {
-            
+            ValorTotalAcumulado += valor;
         }
 
-       
+
         #endregion
     }
 

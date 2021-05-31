@@ -18,10 +18,9 @@ namespace Trabalho_POO_N2
 
         #region Metodos
         public void Limpador() => Console.WriteLine($"Limpador Ativado/Desativado do {Identificacao}...");
-        public void PagaPedagio()
+        public void PagaPedagio(Pedagio pedagio)
         {
-            Pedagio pedagio = Pedagio.GetSingleInstance();
-            pedagio.ValorTotalAcumulado += (ValorPedagio * QuantidadeEixos);
+            pedagio.Receber(ValorPedagio);
         }
         #endregion
 

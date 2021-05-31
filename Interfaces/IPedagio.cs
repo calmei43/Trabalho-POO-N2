@@ -8,6 +8,6 @@ namespace Trabalho_POO_N2
 {
     public interface IPedagio
     {
-      void PagaPedagio();
+      void PagaPedagio(Pedagio pedagio);
     }
 }  

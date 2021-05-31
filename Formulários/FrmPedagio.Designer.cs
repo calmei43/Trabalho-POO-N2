@@ -33,13 +33,10 @@
             this.txtIdentificacao_Pedagio = new System.Windows.Forms.TextBox();
             this.txtLocalizacao_Pedagio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnReceber_Pedagio = new System.Windows.Forms.Button();
-            this.cbVeiculos_Pedagio = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtListarPedagios = new System.Windows.Forms.TextBox();
             this.btnListarPedagios = new System.Windows.Forms.Button();
+            this.btnCadastro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,42 +74,6 @@
             this.label1.TabIndex = 69;
             this.label1.Text = "Localização:";
             // 
-            // btnReceber_Pedagio
-            // 
-            this.btnReceber_Pedagio.Location = new System.Drawing.Point(25, 182);
-            this.btnReceber_Pedagio.Name = "btnReceber_Pedagio";
-            this.btnReceber_Pedagio.Size = new System.Drawing.Size(78, 29);
-            this.btnReceber_Pedagio.TabIndex = 71;
-            this.btnReceber_Pedagio.Text = "Receber";
-            this.btnReceber_Pedagio.UseVisualStyleBackColor = true;
-            // 
-            // cbVeiculos_Pedagio
-            // 
-            this.cbVeiculos_Pedagio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbVeiculos_Pedagio.FormattingEnabled = true;
-            this.cbVeiculos_Pedagio.Location = new System.Drawing.Point(109, 187);
-            this.cbVeiculos_Pedagio.Name = "cbVeiculos_Pedagio";
-            this.cbVeiculos_Pedagio.Size = new System.Drawing.Size(121, 21);
-            this.cbVeiculos_Pedagio.TabIndex = 72;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(129, 235);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 74;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 236);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 19);
-            this.label2.TabIndex = 73;
-            this.label2.Text = "Total Recebido:";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Trabalho_POO_N2.Properties.Resources.cashier2_117800;
@@ -142,19 +103,26 @@
             this.btnListarPedagios.Text = "Listar Pedágios";
             this.btnListarPedagios.UseVisualStyleBackColor = true;
             // 
+            // btnCadastro
+            // 
+            this.btnCadastro.Location = new System.Drawing.Point(67, 193);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(98, 26);
+            this.btnCadastro.TabIndex = 78;
+            this.btnCadastro.Text = "Cadastrar";
+            this.btnCadastro.UseVisualStyleBackColor = true;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
+            // 
             // FrmPedagio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(480, 327);
+            this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.txtListarPedagios);
             this.Controls.Add(this.btnListarPedagios);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbVeiculos_Pedagio);
-            this.Controls.Add(this.btnReceber_Pedagio);
             this.Controls.Add(this.txtLocalizacao_Pedagio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIdentificacao_Pedagio);
@@ -175,12 +143,9 @@
         private System.Windows.Forms.TextBox txtIdentificacao_Pedagio;
         private System.Windows.Forms.TextBox txtLocalizacao_Pedagio;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnReceber_Pedagio;
-        private System.Windows.Forms.ComboBox cbVeiculos_Pedagio;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtListarPedagios;
         private System.Windows.Forms.Button btnListarPedagios;
+        private System.Windows.Forms.Button btnCadastro;
     }
 }

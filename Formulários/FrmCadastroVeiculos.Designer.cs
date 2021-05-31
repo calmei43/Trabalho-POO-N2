@@ -176,6 +176,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tcVeiculo = new System.Windows.Forms.TabControl();
             this.tpCarro = new System.Windows.Forms.TabPage();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.cbMarca_Carro = new System.Windows.Forms.ComboBox();
             this.cbModelo_Carro = new System.Windows.Forms.ComboBox();
             this.btnCadastrar_Carro = new System.Windows.Forms.Button();
@@ -193,12 +199,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
+            this.cbPedagio_Carro = new System.Windows.Forms.ComboBox();
+            this.cbPedagio_Caminhao = new System.Windows.Forms.ComboBox();
+            this.cbPedagio_Moto = new System.Windows.Forms.ComboBox();
+            this.cbPedagio_Onibus = new System.Windows.Forms.ComboBox();
             this.tpNavioDeGuerra.SuspendLayout();
             this.tpNavio.SuspendLayout();
             this.tpTrem.SuspendLayout();
@@ -294,8 +298,10 @@
             // 
             // txtVelocidade_NavioGuerra
             // 
+            this.txtVelocidade_NavioGuerra.Enabled = false;
             this.txtVelocidade_NavioGuerra.Location = new System.Drawing.Point(262, 68);
             this.txtVelocidade_NavioGuerra.Name = "txtVelocidade_NavioGuerra";
+            this.txtVelocidade_NavioGuerra.ReadOnly = true;
             this.txtVelocidade_NavioGuerra.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_NavioGuerra.TabIndex = 102;
             // 
@@ -448,10 +454,13 @@
             // 
             // txtVelocidade_Navio
             // 
+            this.txtVelocidade_Navio.Enabled = false;
             this.txtVelocidade_Navio.Location = new System.Drawing.Point(262, 68);
             this.txtVelocidade_Navio.Name = "txtVelocidade_Navio";
+            this.txtVelocidade_Navio.ReadOnly = true;
             this.txtVelocidade_Navio.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Navio.TabIndex = 88;
+            this.txtVelocidade_Navio.TextChanged += new System.EventHandler(this.txtVelocidade_Navio_TextChanged);
             // 
             // txtNome_Navio
             // 
@@ -591,8 +600,10 @@
             // 
             // txtVelocidade_Trem
             // 
+            this.txtVelocidade_Trem.Enabled = false;
             this.txtVelocidade_Trem.Location = new System.Drawing.Point(262, 68);
             this.txtVelocidade_Trem.Name = "txtVelocidade_Trem";
+            this.txtVelocidade_Trem.ReadOnly = true;
             this.txtVelocidade_Trem.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Trem.TabIndex = 71;
             // 
@@ -819,8 +830,10 @@
             // 
             // txtVelocidade_AviaoGuerra
             // 
+            this.txtVelocidade_AviaoGuerra.Enabled = false;
             this.txtVelocidade_AviaoGuerra.Location = new System.Drawing.Point(258, 68);
             this.txtVelocidade_AviaoGuerra.Name = "txtVelocidade_AviaoGuerra";
+            this.txtVelocidade_AviaoGuerra.ReadOnly = true;
             this.txtVelocidade_AviaoGuerra.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_AviaoGuerra.TabIndex = 53;
             // 
@@ -979,7 +992,7 @@
             // 
             // btnLimpaVidros_Aviao
             // 
-            this.btnLimpaVidros_Aviao.Location = new System.Drawing.Point(185, 174);
+            this.btnLimpaVidros_Aviao.Location = new System.Drawing.Point(187, 176);
             this.btnLimpaVidros_Aviao.Name = "btnLimpaVidros_Aviao";
             this.btnLimpaVidros_Aviao.Size = new System.Drawing.Size(84, 41);
             this.btnLimpaVidros_Aviao.TabIndex = 44;
@@ -1006,8 +1019,10 @@
             // 
             // txtVelocidade_Aviao
             // 
+            this.txtVelocidade_Aviao.Enabled = false;
             this.txtVelocidade_Aviao.Location = new System.Drawing.Point(258, 68);
             this.txtVelocidade_Aviao.Name = "txtVelocidade_Aviao";
+            this.txtVelocidade_Aviao.ReadOnly = true;
             this.txtVelocidade_Aviao.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Aviao.TabIndex = 35;
             // 
@@ -1091,6 +1106,7 @@
             // tpOnibus
             // 
             this.tpOnibus.BackColor = System.Drawing.Color.NavajoWhite;
+            this.tpOnibus.Controls.Add(this.cbPedagio_Onibus);
             this.tpOnibus.Controls.Add(this.cbMarca_Onibus);
             this.tpOnibus.Controls.Add(this.cbModelo_Onibus);
             this.tpOnibus.Controls.Add(this.ckbPossuiLeitoSim_Onibus);
@@ -1183,8 +1199,10 @@
             // 
             // txtVelocidade_Onibus
             // 
+            this.txtVelocidade_Onibus.Enabled = false;
             this.txtVelocidade_Onibus.Location = new System.Drawing.Point(265, 60);
             this.txtVelocidade_Onibus.Name = "txtVelocidade_Onibus";
+            this.txtVelocidade_Onibus.ReadOnly = true;
             this.txtVelocidade_Onibus.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Onibus.TabIndex = 25;
             // 
@@ -1298,6 +1316,7 @@
             // tpMoto
             // 
             this.tpMoto.BackColor = System.Drawing.Color.LightPink;
+            this.tpMoto.Controls.Add(this.cbPedagio_Moto);
             this.tpMoto.Controls.Add(this.cbMarca_Moto);
             this.tpMoto.Controls.Add(this.cbModelo_Moto);
             this.tpMoto.Controls.Add(this.btnCadastrar_Moto);
@@ -1351,7 +1370,7 @@
             // 
             // btnEmpinar_Moto
             // 
-            this.btnEmpinar_Moto.Location = new System.Drawing.Point(226, 230);
+            this.btnEmpinar_Moto.Location = new System.Drawing.Point(380, 130);
             this.btnEmpinar_Moto.Name = "btnEmpinar_Moto";
             this.btnEmpinar_Moto.Size = new System.Drawing.Size(84, 41);
             this.btnEmpinar_Moto.TabIndex = 37;
@@ -1378,8 +1397,10 @@
             // 
             // txtVelocidade_Moto
             // 
+            this.txtVelocidade_Moto.Enabled = false;
             this.txtVelocidade_Moto.Location = new System.Drawing.Point(262, 73);
             this.txtVelocidade_Moto.Name = "txtVelocidade_Moto";
+            this.txtVelocidade_Moto.ReadOnly = true;
             this.txtVelocidade_Moto.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Moto.TabIndex = 15;
             // 
@@ -1463,6 +1484,7 @@
             // tpCaminhao
             // 
             this.tpCaminhao.BackColor = System.Drawing.Color.LightGreen;
+            this.tpCaminhao.Controls.Add(this.cbPedagio_Caminhao);
             this.tpCaminhao.Controls.Add(this.cbMarca_Caminhao);
             this.tpCaminhao.Controls.Add(this.cbModelo_Caminhao);
             this.tpCaminhao.Controls.Add(this.btnCadastrar_Caminhao);
@@ -1514,7 +1536,7 @@
             // 
             // btnCadastrar_Caminhao
             // 
-            this.btnCadastrar_Caminhao.Location = new System.Drawing.Point(359, 145);
+            this.btnCadastrar_Caminhao.Location = new System.Drawing.Point(269, 239);
             this.btnCadastrar_Caminhao.Name = "btnCadastrar_Caminhao";
             this.btnCadastrar_Caminhao.Size = new System.Drawing.Size(84, 41);
             this.btnCadastrar_Caminhao.TabIndex = 35;
@@ -1524,7 +1546,7 @@
             // 
             // btnLimparVidros_Caminhao
             // 
-            this.btnLimparVidros_Caminhao.Location = new System.Drawing.Point(359, 239);
+            this.btnLimparVidros_Caminhao.Location = new System.Drawing.Point(380, 121);
             this.btnLimparVidros_Caminhao.Name = "btnLimparVidros_Caminhao";
             this.btnLimparVidros_Caminhao.Size = new System.Drawing.Size(84, 41);
             this.btnLimparVidros_Caminhao.TabIndex = 34;
@@ -1534,7 +1556,7 @@
             // 
             // btnPagarPedagio_Caminhao
             // 
-            this.btnPagarPedagio_Caminhao.Location = new System.Drawing.Point(359, 192);
+            this.btnPagarPedagio_Caminhao.Location = new System.Drawing.Point(269, 181);
             this.btnPagarPedagio_Caminhao.Name = "btnPagarPedagio_Caminhao";
             this.btnPagarPedagio_Caminhao.Size = new System.Drawing.Size(84, 41);
             this.btnPagarPedagio_Caminhao.TabIndex = 33;
@@ -1592,8 +1614,10 @@
             // 
             // txtVelocidade_Caminhao
             // 
+            this.txtVelocidade_Caminhao.Enabled = false;
             this.txtVelocidade_Caminhao.Location = new System.Drawing.Point(263, 64);
             this.txtVelocidade_Caminhao.Name = "txtVelocidade_Caminhao";
+            this.txtVelocidade_Caminhao.ReadOnly = true;
             this.txtVelocidade_Caminhao.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Caminhao.TabIndex = 15;
             // 
@@ -1724,6 +1748,7 @@
             // tpCarro
             // 
             this.tpCarro.BackColor = System.Drawing.Color.LightBlue;
+            this.tpCarro.Controls.Add(this.cbPedagio_Carro);
             this.tpCarro.Controls.Add(this.label58);
             this.tpCarro.Controls.Add(this.label57);
             this.tpCarro.Controls.Add(this.label56);
@@ -1755,6 +1780,66 @@
             this.tpCarro.Tag = "Carro";
             this.tpCarro.Text = "Carro";
             // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
+            this.label58.Location = new System.Drawing.Point(6, 156);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(158, 19);
+            this.label58.TabIndex = 24;
+            this.label58.Text = "Capacidade Passageiros:";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
+            this.label57.Location = new System.Drawing.Point(6, 119);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(146, 19);
+            this.label57.TabIndex = 23;
+            this.label57.Text = "Quantidade de Portas:";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
+            this.label56.Location = new System.Drawing.Point(180, 69);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(79, 19);
+            this.label56.TabIndex = 22;
+            this.label56.Text = "Velocidade:";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
+            this.label55.Location = new System.Drawing.Point(203, 29);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(59, 19);
+            this.label55.TabIndex = 21;
+            this.label55.Text = "Modelo:";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
+            this.label54.Location = new System.Drawing.Point(6, 69);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(51, 19);
+            this.label54.TabIndex = 20;
+            this.label54.Text = "Marca:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
+            this.label53.Location = new System.Drawing.Point(15, 29);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(50, 19);
+            this.label53.TabIndex = 19;
+            this.label53.Text = "Nome:";
+            // 
             // cbMarca_Carro
             // 
             this.cbMarca_Carro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1775,7 +1860,7 @@
             // 
             // btnCadastrar_Carro
             // 
-            this.btnCadastrar_Carro.Location = new System.Drawing.Point(195, 235);
+            this.btnCadastrar_Carro.Location = new System.Drawing.Point(139, 207);
             this.btnCadastrar_Carro.Name = "btnCadastrar_Carro";
             this.btnCadastrar_Carro.Size = new System.Drawing.Size(84, 41);
             this.btnCadastrar_Carro.TabIndex = 16;
@@ -1785,7 +1870,7 @@
             // 
             // btnLimparVidros_Carro
             // 
-            this.btnLimparVidros_Carro.Location = new System.Drawing.Point(326, 166);
+            this.btnLimparVidros_Carro.Location = new System.Drawing.Point(372, 119);
             this.btnLimparVidros_Carro.Name = "btnLimparVidros_Carro";
             this.btnLimparVidros_Carro.Size = new System.Drawing.Size(84, 41);
             this.btnLimparVidros_Carro.TabIndex = 15;
@@ -1795,9 +1880,9 @@
             // 
             // btnPagarPedagio_Carro
             // 
-            this.btnPagarPedagio_Carro.Location = new System.Drawing.Point(326, 119);
+            this.btnPagarPedagio_Carro.Location = new System.Drawing.Point(262, 208);
             this.btnPagarPedagio_Carro.Name = "btnPagarPedagio_Carro";
-            this.btnPagarPedagio_Carro.Size = new System.Drawing.Size(84, 41);
+            this.btnPagarPedagio_Carro.Size = new System.Drawing.Size(84, 38);
             this.btnPagarPedagio_Carro.TabIndex = 14;
             this.btnPagarPedagio_Carro.Text = "Pagar Pedagio";
             this.btnPagarPedagio_Carro.UseVisualStyleBackColor = true;
@@ -1805,22 +1890,24 @@
             // 
             // txtCapacidadePassageiros_Carro
             // 
-            this.txtCapacidadePassageiros_Carro.Location = new System.Drawing.Point(238, 174);
+            this.txtCapacidadePassageiros_Carro.Location = new System.Drawing.Point(170, 157);
             this.txtCapacidadePassageiros_Carro.Name = "txtCapacidadePassageiros_Carro";
             this.txtCapacidadePassageiros_Carro.Size = new System.Drawing.Size(53, 20);
             this.txtCapacidadePassageiros_Carro.TabIndex = 13;
             // 
             // txtQtdePortas_Carro
             // 
-            this.txtQtdePortas_Carro.Location = new System.Drawing.Point(238, 140);
+            this.txtQtdePortas_Carro.Location = new System.Drawing.Point(158, 118);
             this.txtQtdePortas_Carro.Name = "txtQtdePortas_Carro";
             this.txtQtdePortas_Carro.Size = new System.Drawing.Size(53, 20);
             this.txtQtdePortas_Carro.TabIndex = 11;
             // 
             // txtVelocidade_Carro
             // 
+            this.txtVelocidade_Carro.Enabled = false;
             this.txtVelocidade_Carro.Location = new System.Drawing.Point(262, 68);
             this.txtVelocidade_Carro.Name = "txtVelocidade_Carro";
+            this.txtVelocidade_Carro.ReadOnly = true;
             this.txtVelocidade_Carro.Size = new System.Drawing.Size(103, 20);
             this.txtVelocidade_Carro.TabIndex = 5;
             // 
@@ -1905,65 +1992,41 @@
             this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 0;
             // 
-            // label53
+            // cbPedagio_Carro
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
-            this.label53.Location = new System.Drawing.Point(15, 29);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(50, 19);
-            this.label53.TabIndex = 19;
-            this.label53.Text = "Nome:";
+            this.cbPedagio_Carro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Carro.FormattingEnabled = true;
+            this.cbPedagio_Carro.Location = new System.Drawing.Point(361, 218);
+            this.cbPedagio_Carro.Name = "cbPedagio_Carro";
+            this.cbPedagio_Carro.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Carro.TabIndex = 25;
             // 
-            // label54
+            // cbPedagio_Caminhao
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
-            this.label54.Location = new System.Drawing.Point(6, 69);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(51, 19);
-            this.label54.TabIndex = 20;
-            this.label54.Text = "Marca:";
+            this.cbPedagio_Caminhao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Caminhao.FormattingEnabled = true;
+            this.cbPedagio_Caminhao.Location = new System.Drawing.Point(361, 192);
+            this.cbPedagio_Caminhao.Name = "cbPedagio_Caminhao";
+            this.cbPedagio_Caminhao.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Caminhao.TabIndex = 38;
             // 
-            // label55
+            // cbPedagio_Moto
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
-            this.label55.Location = new System.Drawing.Point(203, 29);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(59, 19);
-            this.label55.TabIndex = 21;
-            this.label55.Text = "Modelo:";
+            this.cbPedagio_Moto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Moto.FormattingEnabled = true;
+            this.cbPedagio_Moto.Location = new System.Drawing.Point(236, 241);
+            this.cbPedagio_Moto.Name = "cbPedagio_Moto";
+            this.cbPedagio_Moto.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Moto.TabIndex = 41;
             // 
-            // label56
+            // cbPedagio_Onibus
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
-            this.label56.Location = new System.Drawing.Point(180, 69);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(79, 19);
-            this.label56.TabIndex = 22;
-            this.label56.Text = "Velocidade:";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
-            this.label57.Location = new System.Drawing.Point(89, 141);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(146, 19);
-            this.label57.TabIndex = 23;
-            this.label57.Text = "Quantidade de Portas:";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F);
-            this.label58.Location = new System.Drawing.Point(58, 176);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(158, 19);
-            this.label58.TabIndex = 24;
-            this.label58.Text = "Capacidade Passageiros:";
+            this.cbPedagio_Onibus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPedagio_Onibus.FormattingEnabled = true;
+            this.cbPedagio_Onibus.Location = new System.Drawing.Point(365, 184);
+            this.cbPedagio_Onibus.Name = "cbPedagio_Onibus";
+            this.cbPedagio_Onibus.Size = new System.Drawing.Size(103, 21);
+            this.cbPedagio_Onibus.TabIndex = 46;
             // 
             // FrmCadastroVeiculos
             // 
@@ -2159,8 +2222,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btn_Desacelerar_Carro;
-        private System.Windows.Forms.Button btnAcelerar_Carro;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -2170,5 +2231,11 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Button btn_Desacelerar_Carro;
+        private System.Windows.Forms.Button btnAcelerar_Carro;
+        private System.Windows.Forms.ComboBox cbPedagio_Carro;
+        private System.Windows.Forms.ComboBox cbPedagio_Caminhao;
+        private System.Windows.Forms.ComboBox cbPedagio_Onibus;
+        private System.Windows.Forms.ComboBox cbPedagio_Moto;
     }
 }

@@ -97,7 +97,7 @@
             this.pictureBox1.Image = global::Trabalho_POO_N2.Properties.Resources.veiculos;
             this.pictureBox1.Location = new System.Drawing.Point(-4, -6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 333);
+            this.pictureBox1.Size = new System.Drawing.Size(105, 355);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -117,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(480, 327);
+            this.ClientSize = new System.Drawing.Size(480, 341);
             this.Controls.Add(this.btnCadastraPedagio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
